@@ -1,0 +1,60 @@
+.header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    color: #fff;
+    transition: 200ms;
+}
+
+.header2 {
+    background-color: white;
+    box-shadow: 0px 25px 50px -25px rgba(148, 163, 184, 0.5);
+    animation: myanimation 3s;
+}
+
+@keyframes myanimation {
+    0% {
+        background: linear-gradient(from, #000, rgba(0, 0, 0, 0.54));
+    }
+    35% {
+        background-color: white;
+        box-shadow: 0px 25px 50px -25px rgba(148, 163, 184, 0.5);
+    }
+    100% {
+        background-color: white;
+        box-shadow: 0px 25px 50px -25px rgba(148, 163, 184, 0.5);
+    }
+}
+
+.mouse_animation::before{
+    animation: mouse 2s infinite;
+}
+
+@keyframes mouse {
+    from{
+        opacity: 1;
+        top: 0.5rem;
+    }
+    to{
+        opacity: 0;
+        top: 1.75rem;
+    }
+}
+
+.image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.answer_wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: height ease 0.2s;
+}
+
+.popup_location{
+    display: block;
+}
+
+iframe{
+    border-radius: 0.75rem;
+}

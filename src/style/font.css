@@ -1,0 +1,79 @@
+@font-face {
+    font-family: worksans-100;
+    src: url('../asset/font/work sans/WorkSans-Thin.ttf');
+    font-display: swap;
+}
+
+.worksans-100{
+    font-family: worksans-100;
+}
+
+@font-face {
+    font-family: worksans-200;
+    src: url('../asset/font/work sans/WorkSans-ExtraLight.ttf');
+    font-display: swap;
+}
+
+.worksans-200{
+    font-family: worksans-200;
+}
+
+@font-face {
+    font-family: worksans-300;
+    src: url('../asset/font/work sans/WorkSans-Light.ttf');
+    font-display: swap;
+}
+
+.worksans-300{
+    font-family: worksans-300;
+}
+
+@font-face {
+    font-family: worksans;
+    src: url('../asset/font/work sans/WorkSans-Regular.ttf');
+    font-display: swap;
+}
+
+.worksans{
+    font-family: worksans;
+}
+
+@font-face {
+    font-family: worksans-500;
+    src: url('../asset/font/work sans/WorkSans-Medium.ttf');
+    font-display: swap;
+}
+
+.worksans-500{
+    font-family: worksans-500;
+}
+
+@font-face {
+    font-family: worksans-600;
+    src: url('../asset/font/work sans/WorkSans-SemiBold.ttf');
+    font-display: swap;
+}
+
+.worksans-600{
+    font-family: worksans-600;
+}
+
+@font-face {
+    font-family: worksans-700;
+    src: url('../asset/font/work sans/WorkSans-Bold.ttf');
+    font-display: swap;
+}
+
+.worksans-700{
+    font-family: worksans-700;
+}
+
+@font-face {
+    font-family: worksans-800;
+    src: url('../asset/font/work sans/WorkSans-ExtraBold.ttf');
+    font-display: swap;
+}
+
+.worksans-800{
+    font-family: worksans-800;
+}
