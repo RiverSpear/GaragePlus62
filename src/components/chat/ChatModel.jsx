@@ -10,7 +10,7 @@ const ChatModel = ({article, active, onToggle}) => {
     return (
         <>
             <div className={`flex flex-col gap-3 ${active ? "active" : ""}`}>
-                <div className='flex flex-col-reverse sm:flex-row items-start justify-between gap-2 sm:gap-0' onClick={onToggle}>
+                <div className='flex flex-col-reverse sm:flex-row items-start justify-between gap-2 sm:gap-0 cursor-pointer' onClick={onToggle}>
                     <div className='flex flex-col gap-1'>
                         <p className='worksans-500'>GaragePlus62 {streetName}</p>
                         <p className='worksans text-[14px] text-gray-500'>{shortAddress}</p>

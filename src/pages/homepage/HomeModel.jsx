@@ -13,7 +13,7 @@ import AboutHomepage from './components/about/AboutHomepage'
 import TestimonyHomepage from './components/testimony/TestimonyHomepage'
 import Navbar from '../../components/navigation bar/Navbar'
 
-export const HomeModel = ({article}) => {
+export const HomeModel = () => {
     Aos.init();
     return (
         <>
