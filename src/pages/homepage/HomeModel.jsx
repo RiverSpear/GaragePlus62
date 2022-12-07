@@ -18,7 +18,7 @@ export const HomeModel = () => {
     return (
         <>
             <div className='flex flex-col gap-44'>
-                <div className=''>
+                <div>
                     <Navbar/>
                     <AboutHomepage/>
                 </div>

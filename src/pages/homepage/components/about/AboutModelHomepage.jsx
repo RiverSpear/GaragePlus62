@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Ripples from 'react-ripples'
 
 import LocationHeadlineHomepage from '../location/location headline/LocationHeadlineHomepage'
 
@@ -18,13 +17,13 @@ const AboutModelHomepage = ({article}) => {
                     </div>
                     <p className='worksans leading-8 -mt-10 w-3/4'>{shortDescription}</p>
                     <Link to='/service'>
-                        <Ripples color="rgba(244,244,244,.3)" during={1200} className='flex items-center gap-5 worksans bg-white/25 w-fit rounded-full px-7 py-4'>
+                        <div className='flex items-center gap-5 worksans bg-white/25 w-fit rounded-full px-7 py-4'>
                             Explore
                             <svg width="59" height="24" viewBox="0 0 59 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 12L53.9998 11.8433" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                 <path d="M47.3911 4.85147L54.3911 11.8515L47.3911 18.8515" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
-                        </Ripples>
+                        </div>
                     </Link>
                 </div>
             </div>
