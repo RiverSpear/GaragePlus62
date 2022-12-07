@@ -26,10 +26,10 @@ const NavbarModel = ({article}) => {
                 <div className='flex items-center justify-between gap-10 worksans px-10 md:px-20 lg:px-32'>
                 <img src={'https:' + logo.fields.file.url} alt="" width={80}/>
                     <div className='hidden md:flex gap-10'>
-                        <Link to='/'>Home</Link>
-                        <Link to='/service'>Servis</Link>
-                        <Link to='/location'>Lokasi</Link>
-                        <Link to='/faq' className='uppercase'>faq</Link>
+                        <Link to='/' className='hover-underline-animation'>Home</Link>
+                        <Link to='/service' className='hover-underline-animation'>Servis</Link>
+                        <Link to='/location' className='hover-underline-animation'>Lokasi</Link>
+                        <Link to='/faq' className='uppercase hover-underline-animation'>faq</Link>
                         </div>
                     <div className='flex items-center gap-5'>
                         <Link to='/contact' className='bg-amber-500 text-white px-4 py-2 rounded-lg'>Hubungi kami</Link>

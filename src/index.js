@@ -20,6 +20,8 @@ import ServicePage from './pages/service/ServicePage';
 import SingleServicePage from './pages/service/SingleServicePage';
 import SingleLocationPage from './pages/location/SingleLocationPage';
 import ContactPage from './pages/contact/ContactPage';
+import PageNotFound from './pages/404 page/PageNotFound';
+import Loading from './components/Loading/Loading';
 
 const router = createBrowserRouter([
   {
@@ -49,6 +51,14 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <ContactPage/>,
+  },
+  {
+    path: "/loading",
+    element: <Loading/>,
+  },
+  {
+    path: "*",
+    element: <PageNotFound/>,
   }
 ]);
 

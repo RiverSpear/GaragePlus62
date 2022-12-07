@@ -1,18 +1,18 @@
 .header {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
-    color: #fff;
+    background: none;
+    color: white;
     transition: 200ms;
 }
 
 .header2 {
     background-color: white;
     box-shadow: 0px 25px 50px -25px rgba(148, 163, 184, 0.5);
-    animation: myanimation 3s;
+    animation: myanimation 1s;
 }
 
 @keyframes myanimation {
     0% {
-        background: linear-gradient(from, #000, rgba(0, 0, 0, 0.54));
+        background: none;
     }
     35% {
         background-color: white;
@@ -57,4 +57,43 @@
 
 iframe{
     border-radius: 0.75rem;
+}
+
+.hover-underline-animation {
+    position: relative;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background: rgb(245 158 11);
+    transition: 0.2s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+.loading{
+    width: 300px;
+    height: 2px;
+    border-radius: 100px;
+    animation: loading infinite 3s;
+}
+
+@keyframes loading {
+    0% {
+        width: 300px;
+    }
+    50%{
+        width: 0px;
+    }
+    100% {
+        width: 300px;
+    }
 }
