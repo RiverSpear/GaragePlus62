@@ -22,6 +22,7 @@ import SingleLocationPage from './pages/location/SingleLocationPage';
 import ContactPage from './pages/contact/ContactPage';
 import PageNotFound from './pages/404 page/PageNotFound';
 import Loading from './components/Loading/Loading';
+import TestimonyPage from './pages/testimony/TestimonyPage';
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <ContactPage/>,
+  },
+  {
+    path: "/testimony",
+    element: <TestimonyPage/>,
   },
   {
     path: "/loading",

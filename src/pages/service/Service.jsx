@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component, Suspense } from 'react'
 import client from '../../client'
 import ServiceData from './ServiceData'
+import Loading from '../../components/Loading/Loading'
 
 export default class Service extends Component {
     state = {
@@ -15,7 +16,11 @@ export default class Service extends Component {
     render() {
         return (
             <>
-                <ServiceData service={this.state.articles} />
+                { !this.state.articles ? <Loading/> : (
+                    <Suspense fallback={<Loading/>}>
+                        <ServiceData service={this.state.articles} />
+                    </Suspense>
+                )}
             </>
         )
     }

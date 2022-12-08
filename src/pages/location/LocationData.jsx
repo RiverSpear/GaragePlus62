@@ -3,7 +3,6 @@ import { useState } from 'react';
 import LocationModel from './LocationModel'
 
 export const LocationData = ({location}) => {
-    
     const [clicked, setClicked] = useState("0");
 
     const handleToggle = (index) => {

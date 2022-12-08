@@ -8,7 +8,7 @@ export const FooterModel = ({article}) => {
         <>
             <div className='flex flex-wrap justify-between gap-20 px-14 md:px-20 xl:px-32 pb-32 w-full'>
                 <div className='flex flex-col gap-10 lg:w-1/4'>
-                    <span className='text-amber-500 worksans-500'>About {garageName}</span>
+                    <span className='text-amber-500 worksans-500'>Tentang {garageName}</span>
                     <p className='worksans text-neutral-600 leading-6'>{shortDescription}</p>
                 </div>
                 <div className='flex flex-col gap-10'>
@@ -17,29 +17,30 @@ export const FooterModel = ({article}) => {
                         <Link to="/service" className='hover:text-amber-500'>Services</Link>
                         <Link to="/location" className='hover:text-amber-500'>Locations</Link>
                         <Link to="/faq" className='uppercase hover:text-amber-500'>faq</Link>
+                        <Link to="/testimony" className='hover:text-amber-500'>Testimoni</Link>
                     </div>
                 </div>
                 <div className='flex flex-col gap-10'>
-                    <p className='text-amber-500 worksans-500'>Opening Hour</p>
+                    <p className='text-amber-500 worksans-500'>Jam Operasional</p>
                     <table className='worksans text-neutral-600'>
                         <tbody>
                             <tr>
-                                <td className='pb-3 pr-10'>Monday - Saturday</td>
+                                <td className='pb-3 pr-14'>Senin - Sabtu</td>
                                 <td className='pb-3'>{mondaySaturday}</td>
                             </tr>
                             <tr>
-                                <td className='pb-3'>Friday</td>
+                                <td className='pb-3'>Jumat</td>
                                 <td className='pb-3'>{friday}</td>
                             </tr>
                             <tr>
-                                <td className='pb-3'>Sunday & Holiday</td>
+                                <td className='pb-3'>Minggu & Hari libur</td>
                                 <td className='pb-3'>{holiday}</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div className='flex flex-col gap-10'>
-                    <p className='text-amber-500 worksans-500'>Central Location</p>
+                    <p className='text-amber-500 worksans-500'>Lokasi Pusat</p>
                     <LocationFooter/>
                 </div>
             </div>

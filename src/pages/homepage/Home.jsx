@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component, Suspense } from 'react'
 import client from '../../client'
+import Loading from '../../components/Loading/Loading'
 import { HomeData } from './HomeData'
 
 export default class Home extends Component {
@@ -15,7 +16,11 @@ export default class Home extends Component {
     render() {
         return (
             <>
-                <HomeData home={this.state.articles} />
+                { !this.state.articles ? <Loading/> : (
+                    <Suspense fallback={<Loading/>}>
+                        <HomeData home={this.state.articles} />
+                    </Suspense>
+                )}
             </>
         )
     }

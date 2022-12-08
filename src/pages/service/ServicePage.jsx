@@ -15,8 +15,11 @@ export default function ServicePage() {
             <Navbar/>
             <img src={background} alt="" className='absolute -z-10' />
             <div className='flex flex-col gap-44 py-44 px-5 md:px-20 xl:px-32'>
-                <div className='flex flex-col items-center gap-3 text-center px-10 lg:px-32'>
-                    <p className='text-[31px] sm:text-[48px] worksans-500'>Servis Kami</p>
+                <div className='flex flex-col items-center gap-5 text-center px-10 lg:px-32'>
+                    <div className='flex flex-col items-center gap-3'>
+                        <p className='worksans-500 text-amber-500 tracking-widest uppercase'>servis</p>
+                        <p className='text-[31px] sm:text-[48px] worksans-500'>Servis Kami</p>
+                    </div>
                     <p className='worksans text-slate-500 w-full sm:w-3/4 md:w-1/2 text-center leading-7'>Pilih salah satu servis terbaik untuk kendaraan kesayanganmu. Punya pertanyaan dengan servis kami? Silahkan <Link to='/contact' className='underline'>Hubungi tim kami.</Link></p>
                 </div>
                 <Service/>

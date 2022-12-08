@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component, Suspense } from 'react'
 import client from '../../client'
 import FaqData from './FaqData'
+import Loading from '../../components/Loading/Loading'
 
 export default class Faq extends Component {
     state = {
@@ -15,7 +16,11 @@ export default class Faq extends Component {
     render() {
         return (
             <>
-                <FaqData faq={this.state.articles} />
+                { !this.state.articles ? <Loading/> : (
+                    <Suspense fallback={<Loading/>}>
+                        <FaqData faq={this.state.articles} />
+                    </Suspense>
+                )}
             </>
         )
     }

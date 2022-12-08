@@ -13,7 +13,8 @@ export const TestimonyDataHomepage = ({testimonial}) => {
             <Swiper
                 style={{
                     "--swiper-navigation-size": "16px",
-                    "zIndex" : "10"
+                    "zIndex" : "10",
+                    "padding" : "0 56px"
                 }}
                 modules={[Pagination, Navigation]}
                 breakpoints={{
@@ -24,17 +25,19 @@ export const TestimonyDataHomepage = ({testimonial}) => {
                         slidesPerView: 2,
                     }
                 }}
-                pagination={{
+                navigation={{
                     clickable: true,
                 }}
+                spaceBetween={32}
             >
                 {
-                    testimonial.map((article, index) => (
+                    testimonial.slice(0, 5).map((article, index) => {
+                        return (article.fields.showOnHomepage === true) ? (
                             <SwiperSlide key={index} className='flex justify-center mt-14'>
                                 <TestimonyModelHomepage article={article}/>
                             </SwiperSlide>
-                        )
-                    )
+                        ) : null 
+                    })
                 }
             </Swiper>
         </>

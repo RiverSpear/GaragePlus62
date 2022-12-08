@@ -1,28 +1,30 @@
 import React from 'react'
-
-import Contact from './Contact'
-
 import Footer from '../../components/footer/Footer'
 import MarketingBox from '../../components/marketing box/MarketingBox'
 import Navbar from '../../components/navigation bar/Navbar'
-import ScrollToTop from '../../components/scroll to top/ScrollToTop'
-import background from '../../asset/image/background.png'
+import Testimony from './Testimony'
 
-function ContactPage() {
+import background from '../../asset/image/background.png'
+import ScrollToTop from '../../components/scroll to top/ScrollToTop'
+import { Link } from 'react-router-dom'
+
+function TestimonyPage() {
     return (
         <>
             <Navbar/>
             <img src={background} alt="" className='absolute -z-10' />
             <div className='flex flex-col gap-44 pt-44'>
                 <div className='flex flex-col items-center gap-20'>
-                    <div className='flex flex-col items-center gap-3 text-center px-10 lg:px-32'>
+                    <div className='flex flex-col items-center gap-10 text-center px-5 lg:px-32'>
                         <div className='flex flex-col items-center gap-3'>
-                            <p className='worksans-500 text-amber-500 tracking-widest uppercase'>kontak</p>
-                            <p className='text-[31px] sm:text-[48px] worksans-500'>Kontak Kami</p>
+                            <p className='worksans-500 text-amber-500 tracking-widest uppercase'>Testimoni</p>
+                            <p className='worksans-500 text-[31px] md:text-[48px] text-center'>Apa yang pelanggan katakan kepada kami</p>
                         </div>
-                        <p className='worksans text-slate-500 w-full sm:w-3/4 md:w-1/2 text-center leading-7'>Pastikan memilih lokasi bengkel yang sesuai dengan yang diinginkan. Setiap lokasi mempunyai kontak yang berbeda.</p>
+                        <span className='worksans text-gray-700'>Ingin memberikan testimoni ? Silahkan <Link to="/contact" className='underline'>hubungi tim kami.</Link></span>
                     </div>
-                    <Contact/>
+                    <div className='px-5 md:px-20 xl:px-32'>
+                        <Testimony/>
+                    </div>
                 </div> 
                 <div className='px-5 md:px-20 xl:px-32'>
                     <MarketingBox/>
@@ -34,4 +36,4 @@ function ContactPage() {
     )
 }
 
-export default ContactPage
+export default TestimonyPage

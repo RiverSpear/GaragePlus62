@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component, Suspense } from 'react'
 import client from '../../client'
+import Loading from '../../components/Loading/Loading'
 import ContactData from './ContactData'
 
 export default class Contact extends Component {
@@ -15,7 +16,11 @@ export default class Contact extends Component {
     render() {
         return (
             <>
-                <ContactData chat={this.state.articles} />
+                { !this.state.articles ? <Loading/> : (
+                    <Suspense fallback={<Loading/>}>
+                        <ContactData chat={this.state.articles} />
+                    </Suspense>
+                )}
             </>
         )
     }
