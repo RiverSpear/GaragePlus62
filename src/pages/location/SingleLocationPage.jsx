@@ -49,8 +49,10 @@ class SingleLocationPage extends Component {
                         <Navbar/>
                         <img src={background} alt="" className='absolute -z-10' />
                         <div className='flex flex-col gap-44 py-32 px-5 lg:px-32'>
-                            <div className='flex flex-col gap-10'>
-                                <div dangerouslySetInnerHTML={{ __html: this.state.article.fields.googleMapsEmbed }} className='w-full h-[200px] sm:h-[450px]'></div>
+                            <div className='flex flex-col items-center gap-10'>
+                                <div className='singleLocation'>
+                                    <div dangerouslySetInnerHTML={{ __html: this.state.article.fields.googleMapsEmbed }}></div>
+                                </div>
                                 <div className='flex flex-col gap-10 py-10'>
                                     <div className='flex flex-col items-center text-center gap-2'>
                                         <p className='text-[31px] worksans-600'>{this.state.article.fields.streetName}</p>

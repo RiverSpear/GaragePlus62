@@ -39,6 +39,7 @@ class SingleServicePage extends Component {
         const { params } = this.props.match
         if(params && params.slug){
             client.getEntries({content_type: 'service', 'fields.slug': params.slug}).then((response) => {
+                response.items.sort((a,b) => a.fields.type > b.fields.type ? -1 : 1);
                 this.setState({article: response.items[0]})
             })
         }
@@ -57,12 +58,11 @@ class SingleServicePage extends Component {
                                 <p className='text-[48px] worksans-500'>{this.state.article.fields.servicePackName}</p>
                                 <p className='worksans text-slate-500 w-full sm:w-3/4 md:w-1/2 text-center leading-7'>Pilih salah satu servis terbaik untuk kendaraan kesayanganmu. Punya pertanyaan dengan servis kami? Silahkan <Link to='/contact' className='underline'>Hubungi tim kami.</Link></p>
                             </div>
-                            <div className='py-20 px-10 md:px-20 xl:px-32'>
+                            <div className='py-20 px-5 md:px-20 xl:px-32'>
                                 <div>
                                     {
                                         this.state.article.fields.detailDescription.listServices.length <= 1 ? (
                                             <div className='flex justify-center'>
-                                                <p className='hidden m-auto worksans-500 bg-amber-50 text-amber-500 px-4 py-2 mb-10 w-fit rounded-lg'>Geser untuk melihat paket lainnya</p>
                                                 {
                                                     this.state.article.fields.detailDescription.listServices.map((_, i) => (
                                                         <div className='bg-white p-0 sm:p-7 z-10 rounded-lg cursor-grab sm:cursor-default' key={i}>
@@ -92,7 +92,6 @@ class SingleServicePage extends Component {
                                             </div>
                                         ) : this.state.article.fields.detailDescription.listServices.length <= 3 ? (
                                             <div>
-                                                <p className='block lg:hidden m-auto worksans-500 bg-amber-50 text-amber-500 px-4 py-2 mb-10 w-fit rounded-lg'>Geser untuk melihat paket lainnya</p>
                                                 <Swiper
                                                     style={{
                                                         "--swiper-navigation-size": "16px",
@@ -146,7 +145,6 @@ class SingleServicePage extends Component {
                                             </div>
                                         ) : (
                                             <div>
-                                                <p className='m-auto worksans-500 bg-amber-50 text-amber-500 px-4 py-2 mb-10 w-fit rounded-lg'>Geser untuk melihat paket lainnya</p>
                                                 <Swiper
                                                     style={{
                                                         "--swiper-navigation-size": "16px",

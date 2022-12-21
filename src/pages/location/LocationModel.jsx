@@ -28,7 +28,9 @@ const LocationModel = ({article}) => {
                         </Ripples>
                     </div>
                 </div>
-                <div dangerouslySetInnerHTML={{ __html: googleMapsEmbed }} className='w-full lg:w-2/3 h-[300px] sm:h-[400px]'></div>
+                <div className='location'>
+                    <div dangerouslySetInnerHTML={{ __html: googleMapsEmbed }}></div>
+                </div>
             </div>
         </>
     )

@@ -59,6 +59,58 @@ iframe{
     border-radius: 0.75rem;
 }
 
+.location iframe{
+    width: 300px;
+    height: 300px;
+}
+
+@media (min-width: 340px) {
+    .location iframe{
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 600px) {
+    .location iframe{
+        width: 500px;
+        height: 400px;
+    }
+}
+
+.singleLocation iframe{
+    width: 300px;
+    height: 300px;
+}
+
+@media (min-width: 340px) {
+    .singleLocation iframe{
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 600px) {
+    .singleLocation iframe{
+        width: 500px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 768px) {
+    .singleLocation iframe{
+        width: 700px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .singleLocation iframe{
+        width: 1000px;
+        height: 400px;
+    }
+}
+
 .hover-underline-animation {
     position: relative;
 }

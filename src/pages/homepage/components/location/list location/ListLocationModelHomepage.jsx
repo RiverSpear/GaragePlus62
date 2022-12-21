@@ -9,7 +9,7 @@ const ListLocationModelHomepage = ({article}) => {
     const {slug, type, streetName, longAddress, googleMapsLink, whatsapp, instagram, tikTok} = article.fields
     return (
         <>
-            <div className='flex flex-col gap-10 w-[275px] sm:w-[400px]'>
+            <div className='flex flex-col gap-10 w-full sm:w-[400px]'>
                 <div className='flex flex-1 flex-col gap-5'>
                     <div className='flex flex-col gap-3'>
                         {

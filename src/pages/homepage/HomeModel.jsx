@@ -37,7 +37,7 @@ export const HomeModel = () => {
                         </div>
                     </Link>
                 </div>
-                <div className='flex flex-col items-center gap-10 px-5 md:px-28'>
+                <div className='flex flex-col items-center gap-10 px-5 md:px-20 xl:px-32'>
                     <p className='text-[25px] sm:text-[31px] worksans-600 capitalize'>Lokasi kami</p>
                     <ListLocation/>
                 </div>
