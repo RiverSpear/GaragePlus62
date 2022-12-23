@@ -5,7 +5,7 @@ import instagram_icon from '../../asset/icon/instagram.png'
 import tiktok_icon from '../../asset/icon/tik-tok.png'
 
 const ContactModel = ({article}) => {
-    const {type, streetName, longAddress, whatsapp, whatsappUrl, instagram, instagramUrl, tikTok, tiktokUrl} = article.fields
+    const {type, streetName, longAddress, whatsapp, instagram, tikTok} = article.fields
     return (
         <>
             <div className='flex flex-col gap-5 bg-white p-7 shadow-[0_25px_50px_-25px_rgba(148,163,184,0.5)] w-full sm:w-[600px] rounded-lg'>
@@ -16,25 +16,25 @@ const ContactModel = ({article}) => {
                     </div>
                     {
                         type === true ? (
-                            <p className='text-[11px] worksans-600 bg-amber-100 text-amber-700 px-3 py-1 uppercase rounded-lg'>Pusat</p>
+                            <p className='text-[14px] worksans-600 text-amber-500'>Pusat</p>
                         ) : (
-                            <p className='text-[11px] worksans-600 bg-slate-100 text-slate-700 px-3 py-1 uppercase rounded-lg'>Cabang</p>
+                            <p className='text-[14px] worksans-600 text-amber-500'>Cabang</p>
                         )
                     }
-                </div>
-                <div className='flex flex-col gap-2'>
-                    <a href={instagramUrl} target='_blank' rel='noreferrer' className='flex items-center gap-5 hover:bg-slate-100 py-3 rounded-lg w-full'>
+                </div> 
+                <div className='flex flex-col gap-7'>
+                    <div className='flex items-center gap-5'>
                         <img src={instagram_icon} alt="Instagram icons created by Pixel perfect - Flaticon" title="instagram icons" width={20} longdesc="https://www.flaticon.com/free-icons/instagram" />
-                        <p className='worksans text-slate-500 text-[14px]'>{instagram}</p>
-                    </a>
-                    <a href={tiktokUrl} target='_blank' rel='noreferrer' className='flex items-center gap-5 hover:bg-slate-100 py-3 rounded-lg cursor-pointer w-full'>
+                        <a href={'https://www.instagram.com/' + instagram} target='_blank' rel='noreferrer' className='worksans text-slate-500 text-[14px] hover:underline'>{instagram}</a>
+                    </div>
+                    <div className='flex items-center gap-5'>
                         <img src={tiktok_icon} alt="Tiktok icons created by Pixel perfect - Flaticon" title="tiktok icons" width={20} longdesc="https://www.flaticon.com/free-icons/tiktok" />
-                        <p className='worksans text-slate-500 text-[14px]'>{tikTok}</p>
-                    </a>
-                    <a href={whatsappUrl} target='_blank' rel='noreferrer' className='flex items-center gap-5 hover:bg-slate-100 py-3 rounded-lg w-full'>
+                        <a href={'https://www.tiktok.com/' + tikTok} target='_blank' rel='noreferrer' className='worksans text-slate-500 text-[14px] hover:underline'>{tikTok}</a>
+                    </div>
+                    <div className='flex items-center gap-5'>
                         <img src={whatsapp_icon} alt="Whatsapp icons created by Pixel perfect - Flaticon" title="whatsapp icons" width={20} longdesc="https://www.flaticon.com/free-icons/whatsapp" />
-                        <p className='worksans text-slate-500 text-[14px]'>{whatsapp}</p>
-                    </a>
+                        <a href={'https://wa.me/' + whatsapp} target='_blank' rel='noreferrer' className='worksans text-slate-500 text-[14px] hover:underline'>{whatsapp}</a>
+                    </div>
                 </div>
             </div>
         </>

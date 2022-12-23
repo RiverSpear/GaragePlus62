@@ -31,9 +31,9 @@ export const TestimonyDataHomepage = ({testimonial}) => {
                 spaceBetween={32}
             >
                 {
-                    testimonial.slice(0, 5).map((article, index) => {
+                    testimonial.map((article, index) => {
                         return (article.fields.showOnHomepage === true) ? (
-                            <SwiperSlide key={index} className='flex justify-center mt-14'>
+                            <SwiperSlide key={index}>
                                 <TestimonyModelHomepage article={article}/>
                             </SwiperSlide>
                         ) : null 

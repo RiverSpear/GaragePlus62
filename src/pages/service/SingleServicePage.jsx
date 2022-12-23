@@ -116,7 +116,7 @@ class SingleServicePage extends Component {
                                                     }}
                                                 >
                                                     {
-                                                        this.state.article.fields.detailDescription.listServices.map((_, i) => (
+                                                        this.state.article.fields.detailDescription.listServices.map((_, i) => ( 
                                                             <SwiperSlide className='bg-white p-0 sm:p-7 z-10 rounded-lg cursor-grab lg:cursor-default' key={i}>
                                                                 <div className='flex flex-col gap-4 border-b border-slate-200 pb-7 w-[300px]'>
                                                                     <div className='flex flex-col gap-1'>

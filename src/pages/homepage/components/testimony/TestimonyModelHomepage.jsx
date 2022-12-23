@@ -3,7 +3,7 @@ import React from 'react'
 const TestimonyModelHomepage = ({article}) => {
     return (
         <>
-            <div className='flex flex-col gap-5 bg-white text-left rounded-2xl p-6 w-full cursor-grab'>
+            <div className='flex flex-col gap-5 bg-white text-left rounded-2xl p-6 cursor-grab h-[225px]'>
                 <div className='flex items-center gap-3'>
                     <span className='bg-amber-100 text-amber-500 text-center leading-[40px] w-10 h-10 rounded-lg worksans-500 text-[20px]'>{article.fields.reviewerName.match(/\b(\w)/g).join('')}</span>
                     <div>

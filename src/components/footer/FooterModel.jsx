@@ -6,7 +6,7 @@ export const FooterModel = ({article}) => {
     const {garageName, shortDescription, mondaySaturday, friday, holiday} = article.fields
     return (
         <>
-            <div className='flex flex-wrap justify-between gap-20 px-5 md:px-20 xl:px-32 pb-32 w-full'>
+            <div className='flex justify-between gap-20 px-5 md:px-20 xl:px-32 pb-32 w-full'>
                 <div className='flex flex-col gap-10 lg:w-1/4'>
                     <span className='text-amber-500 worksans-500'>Tentang {garageName}</span>
                     <p className='worksans text-neutral-600 leading-6'>{shortDescription}</p>
@@ -39,8 +39,8 @@ export const FooterModel = ({article}) => {
                         </tbody>
                     </table>
                 </div>
-                <div className='flex flex-col gap-10'>
-                    <p className='text-amber-500 worksans-500'>Lokasi Pusat</p>
+                <div className='flex flex-col gap-10 w-[300px]'>
+                    <p className='text-amber-500 worksans-500'>Lokasi</p>
                     <LocationFooter/>
                 </div>
             </div>

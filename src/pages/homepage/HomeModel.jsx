@@ -58,6 +58,15 @@ export const HomeModel = () => {
                     <div>
                         <TestimonyHomepage/>
                     </div>
+                    <Link to='/testimony' className='flex justify-center'>
+                        <div className='flex items-center gap-5 bg-amber-500 hover:bg-amber-400 duration-200  w-fit rounded-full px-7 py-4'>
+                            <p className='worksans-500 text-white'>Lihat lebih banyak</p>
+                            <svg width="59" height="24" viewBox="0 0 59 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 12L53.9998 11.8433" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                <path d="M47.3911 4.85147L54.3911 11.8515L47.3911 18.8515" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                        </div>
+                    </Link>
                 </div>
                 <div className='px-5 md:px-20 xl:px-32'>
                     <MarketingBox/>

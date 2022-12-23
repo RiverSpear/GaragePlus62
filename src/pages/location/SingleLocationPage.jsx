@@ -56,21 +56,21 @@ class SingleLocationPage extends Component {
                                 <div className='flex flex-col gap-10 py-10'>
                                     <div className='flex flex-col items-center text-center gap-2'>
                                         <p className='text-[31px] worksans-600'>{this.state.article.fields.streetName}</p>
-                                        <p className='worksans text-slate-500 w-fit'>{this.state.article.fields.longAddress}</p>
+                                        <p className='worksans text-slate-500 w-1/3 sm:w-1/2'>{this.state.article.fields.longAddress}</p>
                                     </div>
                                     <div className='flex flex-wrap items-center justify-center gap-x-20 gap-y-10 whitespace-nowrap'>
-                                        <a href={this.state.article.fields.instagramUrl} target='_blank' rel='noreferrer' className='flex justify-center items-center gap-5'>
+                                        <div className='flex justify-center items-center gap-5'>
                                             <img src={instagram_icon} alt="Instagram icons created by Pixel perfect - Flaticon" title="instagram icons" width={20} longdesc="https://www.flaticon.com/free-icons/instagram" />
-                                            <p className='worksans text-slate-500 text-[14px]'>{this.state.article.fields.instagram}</p>
-                                        </a>
-                                        <a href={this.state.article.fields.tiktokUrl} target='_blank' rel='noreferrer' className='flex justify-center items-center gap-5 cursor-pointer'>
+                                            <a href={'https://www.instagram.com/' + this.state.article.fields.instagram} target='_blank' rel='noreferrer' className='worksans text-slate-500 text-[14px]'>{this.state.article.fields.instagram}</a>
+                                        </div>
+                                        <div className='flex justify-center items-center gap-5'>
                                             <img src={tiktok_icon} alt="Tiktok icons created by Pixel perfect - Flaticon" title="tiktok icons" width={20} longdesc="https://www.flaticon.com/free-icons/tiktok" />
-                                            <p className='worksans text-slate-500 text-[14px]'>{this.state.article.fields.tikTok}</p>
-                                        </a>
-                                        <a href={this.state.article.fields.whatsappUrl} target='_blank' rel='noreferrer' className='flex justify-center items-center gap-5'>
+                                            <a href={'https://www.tiktok.com/' + this.state.article.fields.tikTok} target='_blank' rel='noreferrer' className='worksans text-slate-500 text-[14px]'>{this.state.article.fields.tikTok}</a>
+                                        </div>
+                                        <div className='flex justify-center items-center gap-5'>
                                             <img src={whatsapp_icon} alt="Whatsapp icons created by Pixel perfect - Flaticon" title="whatsapp icons" width={20} longdesc="https://www.flaticon.com/free-icons/whatsapp" />
-                                            <p className='worksans text-slate-500 text-[14px]'>{this.state.article.fields.whatsapp}</p>
-                                        </a>
+                                            <a href={'https://wa.me/' + this.state.article.fields.whatsapp} target='_blank' rel='noreferrer' className='worksans text-slate-500 text-[14px]'>{this.state.article.fields.whatsapp}</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

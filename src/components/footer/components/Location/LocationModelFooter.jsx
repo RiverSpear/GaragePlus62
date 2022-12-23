@@ -1,19 +1,19 @@
 import React from 'react'
 
 const LocationModelFooter = ({article}) => {
-    const {type, streetName, shortAddress} = article.fields
+    const {type, longAddress} = article.fields
     return (
         <>
-            {
-                type === false ? 
-                    null
-                 : (
-                    <div className='flex flex-col gap-2 worksans text-neutral-600'>
-                        <p className='text-neutral-600'>{streetName}</p>
-                        <p className='text-[14px]'>{shortAddress}</p>
-                    </div>
-                )
-            }
+            <div className='flex flex-col gap-2 worksans text-neutral-600'>
+                {
+                    type === false ? (
+                        <p className='worksans-600'>Pusat</p>
+                    ) : (
+                        <p className='worksans-600'>Cabang</p>
+                    )
+                }
+                <p className='text-[14px]'>{longAddress}</p>
+            </div>
         </>
     )
 }

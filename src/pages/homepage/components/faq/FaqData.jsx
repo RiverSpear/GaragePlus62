@@ -14,7 +14,13 @@ export const FaqData = ({faq}) => {
     return (
         <>
             <div className='flex flex-col gap-3 w-full'>
-                {faq.slice(0,5).map((article, index) => <FaqModel onToggle={() => handleToggle(index)} article={article} key={index} active={clicked === index}/>)}
+                {
+                  faq.map((article, index) => {
+                    return(article.fields.priority === true) ? (
+                      <FaqModel onToggle={() => handleToggle(index)} article={article} key={index} active={clicked === index}/>
+                    ) : null
+                  })
+                }
             </div>
         </>
     )

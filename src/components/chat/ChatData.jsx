@@ -15,7 +15,7 @@ export const ChatData = ({chat}) => {
 
     return (
         <>
-            <span className='fixed bottom-10 right-10 z-10 bg-white p-3 rounded-full shadow-lg hover:shadow-md shadow-gray-300 cursor-pointer duration-200' onClick={() => setPopup(true)}>
+            <span className='fixed bottom-10 right-10 z-10 bg-white p-3 rounded-full shadow shadow-gray-300 cursor-pointer duration-200' onClick={() => setPopup(true)}>
                 <svg width="24px" height="24px" strokeWidth="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
                     <path d="M8 10h8M8 14h4M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12c0 1.821.487 3.53 1.338 5L2.5 21.5l4.5-.838A9.955 9.955 0 0012 22z" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className='stroke-amber-500'></path>
                 </svg>

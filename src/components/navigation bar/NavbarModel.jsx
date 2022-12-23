@@ -23,7 +23,7 @@ const NavbarModel = ({article}) => {
     return (
         <>
             <div className={`fixed z-20 w-full ${header}`}>
-                <div className='flex items-center justify-between gap-10 worksans px-10 lg:px-32'>
+                <div className='flex items-center justify-between gap-10 worksans px-5 lg:px-32'>
                 <img src={'https:' + logo.fields.file.url} alt="" className="w-16 md:w-20"/>
                     <div className='hidden md:flex gap-10'>
                         <Link to='/' className='hover-underline-animation'>Home</Link>
