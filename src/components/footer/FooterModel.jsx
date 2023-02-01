@@ -6,7 +6,7 @@ export const FooterModel = ({article}) => {
     const {garageName, shortDescription, mondaySaturday, friday, holiday} = article.fields
     return (
         <>
-            <div className='flex justify-between gap-20 px-5 md:px-20 xl:px-32 pb-32 w-full'>
+            <div className='flex flex-wrap justify-between gap-20 px-5 md:px-20 xl:px-32 pb-32 w-full'>
                 <div className='flex flex-col gap-10 lg:w-1/4'>
                     <span className='text-amber-500 worksans-500'>Tentang {garageName}</span>
                     <p className='worksans text-neutral-600 leading-6'>{shortDescription}</p>
@@ -14,10 +14,10 @@ export const FooterModel = ({article}) => {
                 <div className='flex flex-col gap-10'>
                     <p className='text-amber-500 worksans-500'>Quick Links</p>
                     <div className='flex flex-col gap-3 worksans text-neutral-600'>
-                        <Link to="/service" className='hover:text-amber-500'>Services</Link>
-                        <Link to="/location" className='hover:text-amber-500'>Locations</Link>
+                        <Link to="/servis" className='hover:text-amber-500'>Services</Link>
+                        <Link to="/lokasi" className='hover:text-amber-500'>Locations</Link>
                         <Link to="/faq" className='uppercase hover:text-amber-500'>faq</Link>
-                        <Link to="/testimony" className='hover:text-amber-500'>Testimoni</Link>
+                        <Link to="/testimoni" className='hover:text-amber-500'>Testimoni</Link>
                     </div>
                 </div>
                 <div className='flex flex-col gap-10'>
