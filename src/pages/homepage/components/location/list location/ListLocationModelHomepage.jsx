@@ -37,7 +37,7 @@ const ListLocationModelHomepage = ({article}) => {
                         </div>
                     </div>
                 </div>
-                <Link to={`/location/${slug}`} className='worksans-500 hover:text-amber-500 underline underline-offset-[10px] decoration-2 decoration-amber-500'>
+                <Link to={`/lokasi/${slug}`} className='worksans-500 hover:text-amber-500 underline underline-offset-[10px] decoration-2 decoration-amber-500'>
                     Detail lokasi
                 </Link>
             </div>

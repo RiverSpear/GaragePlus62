@@ -15,7 +15,7 @@ function PageNotFoundModel({article}) {
                     4
                 </span>
                 <p className='worksans text-base md:text-[20px] text-center leading-7 -tracking-wide w-full md:w-1/2'>Waduh, Halaman ini tidak ada. Mungkin halaman ini sudah dihapus, dipindah, atau memang tidak ada!</p>
-                <p onClick={() => navigate(-1)} className='bg-amber-500 worksans text-white text-center p-3 rounded-lg w-[300px]'>Kembali</p>
+                <p onClick={() => navigate(-1)} className='bg-amber-500 worksans text-white text-center p-3 rounded-lg w-[300px] cursor-pointer'>Kembali</p>
             </div>
             <ScrollToTop/>
             <Footer/>

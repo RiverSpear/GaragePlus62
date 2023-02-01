@@ -27,13 +27,13 @@ const NavbarModel = ({article}) => {
                 <img src={'https:' + logo.fields.file.url} alt="" className="w-16 md:w-20"/>
                     <div className='hidden md:flex gap-10'>
                         <Link to='/' className='hover-underline-animation'>Home</Link>
-                        <Link to='/service' className='hover-underline-animation'>Servis</Link>
-                        <Link to='/location' className='hover-underline-animation'>Lokasi</Link>
+                        <Link to='/servis' className='hover-underline-animation'>Servis</Link>
+                        <Link to='/lokasi' className='hover-underline-animation'>Lokasi</Link>
                         <Link to='/faq' className='uppercase hover-underline-animation'>faq</Link>
-                        <Link to='/testimony' className='hover-underline-animation'>Testimoni</Link>
+                        <Link to='/testimoni' className='hover-underline-animation'>Testimoni</Link>
                         </div>
                     <div className='flex items-center gap-5'>
-                        <Link to='/contact' className='bg-amber-500 hover:bg-amber-400 text-white px-4 py-2 rounded-lg duration-200'>Hubungi kami</Link>
+                        <Link to='/kontak' className='bg-amber-500 hover:bg-amber-400 text-white px-4 py-2 rounded-lg duration-200'>Hubungi kami</Link>
                         <div className='block md:hidden cursor-pointer' onClick={() => setMobileNavbar(true)}>
                             <svg width="24px" height="24px" strokeWidth="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
                                 <path d="M3 5h18M3 12h18M3 19h18" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
@@ -51,11 +51,11 @@ const NavbarModel = ({article}) => {
                 <div className='h-full flex justify-end pt-10 px-20'>
                     <div className='flex flex-col gap-7 worksans-500 text-[25px] text-right'>
                         <Link to='/' className='hover:pr-5 hover:text-amber-500 duration-200'>Home</Link>
-                        <Link to='/service' className='hover:pr-5 hover:text-amber-500 duration-200'>Servis</Link>
-                        <Link to='/location' className='hover:pr-5 hover:text-amber-500 duration-200'>Lokasi</Link>
+                        <Link to='/servis' className='hover:pr-5 hover:text-amber-500 duration-200'>Servis</Link>
+                        <Link to='/lokasi' className='hover:pr-5 hover:text-amber-500 duration-200'>Lokasi</Link>
                         <Link to='/faq' className='hover:pr-5 hover:text-amber-500 uppercase duration-200'>faq</Link>
-                        <Link to='/testimony' className='hover:pr-5 hover:text-amber-500 duration-200'>Testimoni</Link>
-                        <Link to='/contact' className='hover:pr-5 hover:text-amber-500 capitalize duration-200'>Kontak kami</Link>
+                        <Link to='/testimoni' className='hover:pr-5 hover:text-amber-500 duration-200'>Testimoni</Link>
+                        <Link to='/kontak' className='hover:pr-5 hover:text-amber-500 capitalize duration-200'>Kontak kami</Link>
                     </div>
                 </div>
             </div>

@@ -34,27 +34,27 @@ const router = createBrowserRouter([
     element: <FaqPage/>,
   },
   {
-    path: "/location",
+    path: "/lokasi",
     element: <LocationPage/>,
   },
   {
-    path: "/location/:slug",
+    path: "/lokasi/:slug",
     element: <SingleLocationPage/>,
   },
   {
-    path: "/service",
+    path: "/servis",
     element: <ServicePage/>,
   },
   {
-    path: "/service/:slug",
+    path: "/servis/:slug",
     element: <SingleServicePage/>,
   },
   {
-    path: "/contact",
+    path: "/kontak",
     element: <ContactPage/>,
   },
   {
-    path: "/testimony",
+    path: "/testimoni",
     element: <TestimonyPage/>,
   },
   {

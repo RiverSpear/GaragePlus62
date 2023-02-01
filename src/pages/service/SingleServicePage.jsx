@@ -56,7 +56,7 @@ class SingleServicePage extends Component {
                         <div className='pt-44'>
                             <div className='flex flex-col items-center gap-3 text-center px-10 lg:px-32'>
                                 <p className='text-[48px] worksans-500'>{this.state.article.fields.servicePackName}</p>
-                                <p className='worksans text-slate-500 w-full sm:w-3/4 md:w-1/2 text-center leading-7'>Pilih salah satu servis terbaik untuk kendaraan kesayanganmu. Punya pertanyaan dengan servis kami? Silahkan <Link to='/contact' className='underline'>Hubungi tim kami.</Link></p>
+                                <p className='worksans text-slate-500 w-full sm:w-3/4 md:w-1/2 text-center leading-7'>Pilih salah satu servis terbaik untuk kendaraan kesayanganmu. Punya pertanyaan dengan servis kami? Silahkan <Link to='/kontak' className='underline'>Hubungi tim kami.</Link></p>
                             </div>
                             <div className='py-20 px-5 md:px-20 xl:px-32'>
                                 <div>
@@ -72,7 +72,7 @@ class SingleServicePage extends Component {
                                                                     <p className='worksans-500 text-slate-500'>{this.state.article.fields.detailDescription.listServices[i].serviceName}</p>
                                                                 </div>
                                                                 <p className='worksans-500 text-[25px]'>Rp {priceSplitter(this.state.article.fields.detailDescription.listServices[i].price)}</p>
-                                                                <Link to='/contact' className='bg-amber-500 hover:bg-amber-400 text-white worksans-500 text-center py-2.5 rounded-md cursor-pointer duration-200'>Hubungi kami</Link>
+                                                                <Link to='/kontak' className='bg-amber-500 hover:bg-amber-400 text-white worksans-500 text-center py-2.5 rounded-md cursor-pointer duration-200'>Hubungi kami</Link>
                                                             </div>
                                                             <div className='flex flex-col gap-5 pt-7'>
                                                                 {
@@ -124,7 +124,7 @@ class SingleServicePage extends Component {
                                                                         <p className='worksans-500 text-slate-500'>{this.state.article.fields.detailDescription.listServices[i].serviceName}</p>
                                                                     </div>
                                                                     <p className='worksans-500 text-[25px]'>Rp {priceSplitter(this.state.article.fields.detailDescription.listServices[i].price)}</p>
-                                                                    <Link to='/contact' className='bg-amber-500 hover:bg-amber-400 text-white worksans-500 text-center py-2.5 rounded-md cursor-pointer duration-200'>Hubungi kami</Link>
+                                                                    <Link to='/kontak' className='bg-amber-500 hover:bg-amber-400 text-white worksans-500 text-center py-2.5 rounded-md cursor-pointer duration-200'>Hubungi kami</Link>
                                                                 </div>
                                                                 <div className='flex flex-col gap-5 pt-7'>
                                                                     {
@@ -178,7 +178,7 @@ class SingleServicePage extends Component {
                                                                         <p className='worksans-500 text-slate-500'>{this.state.article.fields.detailDescription.listServices[i].serviceName}</p>
                                                                     </div>
                                                                     <p className='worksans-500 text-[25px]'>Rp {priceSplitter(this.state.article.fields.detailDescription.listServices[i].price)}</p>
-                                                                    <Link to='/contact' className='bg-amber-500 hover:bg-amber-400 text-white worksans-500 text-center py-2.5 rounded-md cursor-pointer duration-200'>Hubungi kami</Link>
+                                                                    <Link to='/kontak' className='bg-amber-500 hover:bg-amber-400 text-white worksans-500 text-center py-2.5 rounded-md cursor-pointer duration-200'>Hubungi kami</Link>
                                                                 </div>
                                                                 <div className='flex flex-col gap-5 pt-7'>
                                                                     {

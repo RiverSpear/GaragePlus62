@@ -20,7 +20,7 @@ export default function ServicePage() {
                         <p className='worksans-500 text-amber-500 tracking-widest uppercase'>servis</p>
                         <p className='text-[31px] sm:text-[48px] worksans-500'>Servis Kami</p>
                     </div>
-                    <p className='worksans text-slate-500 w-full sm:w-3/4 md:w-1/2 text-center leading-7'>Pilih salah satu servis terbaik untuk kendaraan kesayanganmu. Punya pertanyaan dengan servis kami? Silahkan <Link to='/contact' className='underline'>Hubungi tim kami.</Link></p>
+                    <p className='worksans text-slate-500 w-full sm:w-3/4 md:w-1/2 text-center leading-7'>Pilih salah satu servis terbaik untuk kendaraan kesayanganmu. Punya pertanyaan dengan servis kami? Silahkan <Link to='/kontak' className='underline'>Hubungi tim kami.</Link></p>
                 </div>
                 <Service/>
                 <MarketingBox/>

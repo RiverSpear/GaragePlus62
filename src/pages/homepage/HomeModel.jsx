@@ -27,7 +27,7 @@ export const HomeModel = () => {
                 <div className='flex flex-col items-center gap-10 px-10 md:px-28'>
                     <p className='text-[25px] sm:text-[31px] worksans-600 capitalize'>Servis kami</p>
                     <ListService/>
-                    <Link to='/service'>
+                    <Link to='/servis'>
                         <div className='flex items-center gap-5 worksans bg-amber-500 hover:bg-amber-400 text-white w-fit rounded-full px-7 py-4 duration-200'>
                             Servis
                             <svg width="59" height="24" viewBox="0 0 59 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,7 +58,7 @@ export const HomeModel = () => {
                     <div>
                         <TestimonyHomepage/>
                     </div>
-                    <Link to='/testimony' className='flex justify-center'>
+                    <Link to='/testimoni' className='flex justify-center'>
                         <div className='flex items-center gap-5 bg-amber-500 hover:bg-amber-400 duration-200  w-fit rounded-full px-7 py-4'>
                             <p className='worksans-500 text-white'>Lihat lebih banyak</p>
                             <svg width="59" height="24" viewBox="0 0 59 24" fill="none" xmlns="http://www.w3.org/2000/svg">

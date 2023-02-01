@@ -20,7 +20,7 @@ function TestimonyPage() {
                             <p className='worksans-500 text-amber-500 tracking-widest uppercase'>Testimoni</p>
                             <p className='worksans-500 text-[31px] md:text-[48px] text-center'>Apa yang pelanggan katakan kepada kami</p>
                         </div>
-                        <span className='worksans text-gray-700'>Ingin memberikan testimoni ? Silahkan <Link to="/contact" className='underline'>hubungi tim kami.</Link></span>
+                        <span className='worksans text-gray-700'>Ingin memberikan testimoni ? Silahkan <Link to="/kontak" className='underline'>hubungi tim kami.</Link></span>
                     </div>
                     <div className='px-5 md:px-20 xl:px-32'>
                         <Testimony/>

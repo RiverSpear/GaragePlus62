@@ -21,7 +21,7 @@ export default function FaqPage() {
                             <p className='worksans-500 text-amber-500 tracking-widest uppercase'>faq</p>
                             <p className='text-[31px] sm:text-[48px] worksans-500'>Frequently Asked Question</p>
                         </div>
-                        <p className='worksans text-slate-500 w-full sm:w-3/4 md:w-1/2 text-center leading-7'>Semua yang kamu perlu ketahui ada disini. Punya pertanyaan lebih lanjut? Silahkan <Link to="/contact" className='underline'>hubungi tim kami.</Link></p>
+                        <p className='worksans text-slate-500 w-full sm:w-3/4 md:w-1/2 text-center leading-7'>Semua yang kamu perlu ketahui ada disini. Punya pertanyaan lebih lanjut? Silahkan <Link to="/kontak" className='underline'>hubungi tim kami.</Link></p>
                     </div>
                     <Faq/>
                 </div> 

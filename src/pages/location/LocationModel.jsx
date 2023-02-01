@@ -24,7 +24,7 @@ const LocationModel = ({article}) => {
                             <a href={googleMapsLink} target="_blank" rel='noreferrer' className='bg-amber-500 hover:bg-amber-400 worksans-500 text-[14px] text-white px-5 py-3 whitespace-nowrap rounded-full duration-200'>Lihat di maps</a>
                         </Ripples>
                         <Ripples color="rgba(244,244,244,.3)" during={1200}>
-                            <Link to={`/location/${slug}`} className='bg-slate-100 hover:bg-slate-50 worksans-500 text-[14px] text-slate-700 px-5 py-3 whitespace-nowrap rounded-full duration-200'>Detail lokasi</Link>
+                            <Link to={`/lokasi/${slug}`} className='bg-slate-100 hover:bg-slate-50 worksans-500 text-[14px] text-slate-700 px-5 py-3 whitespace-nowrap rounded-full duration-200'>Detail lokasi</Link>
                         </Ripples>
                     </div>
                 </div>
