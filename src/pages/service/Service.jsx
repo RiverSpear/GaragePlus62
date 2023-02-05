@@ -10,6 +10,7 @@ export default class Service extends Component {
     
     componentDidMount() {
         client.getEntries({content_type: 'service'}).then((response) => {
+            response.items.sort((a,b) => a.fields.contentOrder < b.fields.contentOrder ? -1 : 1);
             this.setState({articles: response.items})
         })
     } 

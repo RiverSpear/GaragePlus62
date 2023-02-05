@@ -22,7 +22,7 @@ export const HomeModel = () => {
                     <AboutHomepage/>
                 </div>
                 <div className='flex justify-center'>
-                    <p className='text-center worksans-600 text-[21px] sm:text-[25px] w-full md:w-3/4 lg:w-1/2 px-10'>Perawatan Komplit Untuk Motor Kesayanganmu! Yuk, kunjungi bengkel kami di kotamu, jangan tunggu sampe motormu rusak ya!</p>
+                    <p className='text-center worksans-600 text-[21px] sm:text-[25px] w-full md:w-3/4 lg:w-1/2 px-10'>Perawatan Komplit Untuk Motor Kesayanganmu! Yuk, kunjungi bengkel kami, jangan tunggu sampe motormu rusak ya!</p>
                 </div>
                 <div className='flex flex-col items-center gap-10 px-10 md:px-28'>
                     <p className='text-[25px] sm:text-[31px] worksans-600 capitalize'>Servis kami</p>

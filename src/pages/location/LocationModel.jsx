@@ -10,7 +10,7 @@ const LocationModel = ({article}) => {
                 <div className='flex flex-col gap-3 w-full lg:w-1/2'>
                     <div className='flex flex-col gap-3'>
                         {
-                            type === false ? (
+                            type === true ? (
                                 <p className='worksans-600 text-amber-500'>Pusat</p>
                             ) : (
                                 <p className='worksans-600 text-amber-500'>Cabang</p>

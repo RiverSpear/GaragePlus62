@@ -10,7 +10,10 @@ export default class Faq extends Component {
     
     componentDidMount() {
         client.getEntries({content_type: 'faq'}).then((response) => {
-            response.items.sort((a,b) => a.fields.priority > b.fields.priority ? -1 : 1);
+            response.items.sort((a,b) => 
+                a.fields.priority > b.fields.priority ? -1 : 1 && 
+                a.fields.contentOrder < b.fields.contentOrder ? -1 : 1
+            )
             this.setState({articles: response.items})
         })
     } 

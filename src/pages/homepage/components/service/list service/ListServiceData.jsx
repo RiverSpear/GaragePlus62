@@ -6,7 +6,7 @@ export const ListServiceData = ({service}) => {
         <>
             <div className='flex flex-wrap justify-center gap-14'>
                 {
-                    service.slice(0, 3).map((article, index) => {
+                    service.map((article, index) => {
                         return (article.fields.showOnHomepage === true) ? (
                             <ListServiceModel article={article} key={index}/>
                         ) : null 

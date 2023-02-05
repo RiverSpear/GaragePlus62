@@ -13,7 +13,7 @@ const ListLocationModelHomepage = ({article}) => {
                 <div className='flex flex-1 flex-col gap-5'>
                     <div className='flex flex-col gap-3'>
                         {
-                            type === false ? (
+                            type === true ? (
                                 <p className='text-[16px] worksans-600 text-amber-500'>Pusat</p>
                             ) : (
                                 <p className='text-[16px] worksans-600 text-amber-500'>Cabang</p>

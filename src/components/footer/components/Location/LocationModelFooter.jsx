@@ -6,7 +6,7 @@ const LocationModelFooter = ({article}) => {
         <>
             <div className='flex flex-col gap-2 worksans text-neutral-600'>
                 {
-                    type === false ? (
+                    type === true ? (
                         <p className='worksans-600'>Pusat</p>
                     ) : (
                         <p className='worksans-600'>Cabang</p>
