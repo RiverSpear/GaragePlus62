@@ -11,7 +11,12 @@ const ServiceModel = ({article}) => {
                 <img src={'https:' + headlinePhoto.fields.file.url} alt="" className="rounded-tl-xl rounded-tr-xl w-full h-[175px]" />
                 <div className='flex flex-1 flex-col justify-between gap-10 p-4'>
                     <div className='flex flex-col gap-2'>
-                        <p className='worksans text-slate-500 text-[14px]'>{vehicle}</p>
+                        {
+                            !vehicle ? (
+                                null ) : (
+                                    <p className='worksans text-slate-500 text-[14px]'>{vehicle}</p>
+                                )
+                        }
                         <p className='worksans-600 text-[16px]'>{servicePackName}</p>
                         <p className='worksans text-slate-500 text-[14px]'>{detailDescription.listServices.length} paket berbeda</p>
                     </div>
