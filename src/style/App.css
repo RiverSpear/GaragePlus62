@@ -85,7 +85,7 @@ iframe{
 
 @media (min-width: 340px) {
     .singleLocation iframe{
-        width: 400px;
+        width: 375px;
         height: 350px;
     }
 }
