@@ -56,7 +56,7 @@ class SingleLocationPage extends Component {
                                 <div className='flex flex-col gap-10 py-10'>
                                     <div className='flex flex-col items-center text-center gap-2'>
                                         <p className='text-[31px] worksans-600'>{this.state.article.fields.streetName}</p>
-                                        <p className='worksans text-slate-500 w-1/3 sm:w-1/2'>{this.state.article.fields.longAddress}</p>
+                                        <p className='worksans text-slate-500 w-full md:w-1/2'>{this.state.article.fields.longAddress}</p>
                                     </div>
                                     <div className='flex flex-wrap items-center justify-center gap-x-20 gap-y-10 whitespace-nowrap'>
                                         <div className='flex justify-center items-center gap-5'>
