@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/garageplus62/static/css/main.d8069c28.css",
+    "main.js": "/garageplus62/static/js/main.7f6526bd.js",
+    "static/js/787.8591fab5.chunk.js": "/garageplus62/static/js/787.8591fab5.chunk.js",
+    "static/media/background.png": "/garageplus62/static/media/background.e3c27ba57c116a6f20a6.png",
+    "static/media/WorkSans-Medium.ttf": "/garageplus62/static/media/WorkSans-Medium.f1dd9ac4126d93c6baeb.ttf",
+    "static/media/WorkSans-SemiBold.ttf": "/garageplus62/static/media/WorkSans-SemiBold.8988ce2e3e8957a63db8.ttf",
+    "static/media/WorkSans-ExtraBold.ttf": "/garageplus62/static/media/WorkSans-ExtraBold.d221515a328f2d7c21c7.ttf",
+    "static/media/WorkSans-Bold.ttf": "/garageplus62/static/media/WorkSans-Bold.aa43e32a4b4e4ffe0942.ttf",
+    "static/media/WorkSans-ExtraLight.ttf": "/garageplus62/static/media/WorkSans-ExtraLight.a8f56c4e576f67cc442b.ttf",
+    "static/media/WorkSans-Light.ttf": "/garageplus62/static/media/WorkSans-Light.1ca2c48a9aa9f5cb1e30.ttf",
+    "static/media/WorkSans-Regular.ttf": "/garageplus62/static/media/WorkSans-Regular.ca211a55c3d9d8690c63.ttf",
+    "static/media/WorkSans-Thin.ttf": "/garageplus62/static/media/WorkSans-Thin.336700fa8bf1eb9f510d.ttf",
+    "static/media/instagram.png": "/garageplus62/static/media/instagram.e719d8b29f452a16302d.png",
+    "static/media/tik-tok.png": "/garageplus62/static/media/tik-tok.49b1a7fdabdc892efbab.png",
+    "static/media/whatsapp.png": "/garageplus62/static/media/whatsapp.1dd8ca2765f1f177ab22.png",
+    "index.html": "/garageplus62/index.html",
+    "main.d8069c28.css.map": "/garageplus62/static/css/main.d8069c28.css.map",
+    "main.7f6526bd.js.map": "/garageplus62/static/js/main.7f6526bd.js.map",
+    "787.8591fab5.chunk.js.map": "/garageplus62/static/js/787.8591fab5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8069c28.css",
+    "static/js/main.7f6526bd.js"
+  ]
+}
