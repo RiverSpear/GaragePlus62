@@ -28,6 +28,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home/>,
+    errorElement: <PageNotFound/>
   },
   {
     path: "/faq",
