@@ -20,15 +20,13 @@ import ServicePage from './pages/service/ServicePage';
 import SingleServicePage from './pages/service/SingleServicePage';
 import SingleLocationPage from './pages/location/SingleLocationPage';
 import ContactPage from './pages/contact/ContactPage';
-import PageNotFound from './pages/404 page/PageNotFound';
 import Loading from './components/Loading/Loading';
 import TestimonyPage from './pages/testimony/TestimonyPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
-    errorElement: <PageNotFound/>
+    element: <Home/>
   },
   {
     path: "/faq",
@@ -61,17 +59,13 @@ const router = createBrowserRouter([
   {
     path: "/loading",
     element: <Loading/>,
-  },
-  {
-    path: "*",
-    element: <PageNotFound/>,
   }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 
