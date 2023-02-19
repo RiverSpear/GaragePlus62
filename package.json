@@ -1,7 +1,6 @@
 {
   "name": "garageplus62",
   "version": "1.0.0",
-  "homepage": "https://riverspear.github.io/garageplus62/",
   "private": true,
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.2",
