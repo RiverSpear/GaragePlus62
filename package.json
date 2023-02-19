@@ -2,7 +2,7 @@
   "name": "garageplus62",
   "version": "1.0.0",
   "homepage": "https://riverspear.github.io/garageplus62/",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.2",
     "@testing-library/jest-dom": "^5.16.5",
@@ -20,8 +20,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
