@@ -19,7 +19,6 @@ function Chat() {
                     return 1;
                 });
                 setArticles(sortedArticles)
-                console.log(articles)
             })
             .catch(console.error);
     }, []);
