@@ -12,8 +12,6 @@ function AboutHomepage() {
             .catch(console.error);
     }, []);
 
-    console.log(articles)
-
     if (!articles) return <Loading/>;
     return (
         <>
@@ -24,7 +22,7 @@ function AboutHomepage() {
                             <div className='flex flex-col items-center gap-8 m-auto text-center py-44 px-10 text-white w-full md:w-3/4 lg:w-1/2'>
                                 <p className='worksans-600 text-[31px] sm:text-[39px]'>{article.fields.headline}</p>
                                 <p className='worksans-500 text-[17px]'>{article.fields.headlineDescription}</p>
-                                <Link to='/servis' className='worksans-500 uppercase tracking-widest bg-amber-500 text-[15px] px-16 py-5 rounded-full'>lihat servis</Link>
+                                <Link to='/servis' className='worksans-500 capitalize bg-amber-500 hover:bg-amber-400 px-10 py-4 rounded-2xl hover:rounded-full'>lihat servis</Link>
                             </div>
                         </div>
                     </div>
@@ -35,26 +33,3 @@ function AboutHomepage() {
 }
 
 export default AboutHomepage
-
-// import React, { Component } from 'react'
-// import client from '../../../../client'
-// import AboutDataHomepage from './AboutDataHomepage'
-
-// export default class AboutHomepage extends Component {
-//     state = {
-//         articles: []
-//     }
-    
-//     componentDidMount() {
-//         client.getEntries({content_type: 'aboutUs'}).then((response) => {
-//             this.setState({articles: response.items})
-//         })
-//     } 
-//     render() {
-//         return (
-//             <>
-//                 <AboutDataHomepage about={this.state.articles} />
-//             </>
-//         )
-//     }
-// }

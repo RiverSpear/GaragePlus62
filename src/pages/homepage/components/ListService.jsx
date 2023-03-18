@@ -12,14 +12,6 @@ function ListService() {
             .catch(console.error);
     }, []);
 
-    console.log(articles)
-    
-    const lowestPriceHandle = articles.reduce((min, article) => {
-        const prices = article.fields.detailService.map((detail) => detail.fields.price);
-        const lowest = Math.min(...prices);
-        return lowest < min ? lowest : min;
-    }, Infinity).toLocaleString('id-ID', { style: 'currency', currency: 'IDR' });
-
     if (!articles) return <Loading/>;
     return (
         <>
@@ -34,7 +26,11 @@ function ListService() {
                                     <p className='bg-amber-400 worksans-500 py-1.5 px-3 rounded-full whitespace-nowrap'>{article.fields.detailService.length} paket</p>
                                 </div>
                             </div>
-                            <p className='bg-gray-100 text-gray-500 worksans-500 text-center py-3 w-full rounded-full'>Mulai dari {lowestPriceHandle.replace(/,00$/, "")}</p>
+                            {/* {
+                                article.fields.detailService.map((detailService) => (
+                                    <p className='bg-gray-100 text-gray-500 worksans-500 text-center py-3 w-full rounded-full'>Mulai dari {detailService.fields.price.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' })}</p>
+                                )).reduce((prev, cur) => (cur.price < prev.price ? cur : prev))
+                            } */}
                         </Link>
                     ))
                 }
@@ -44,27 +40,3 @@ function ListService() {
 }
 
 export default ListService
-
-// import React, { Component } from 'react'
-// import client from '../../../../../client'
-// import ListServiceData from './ListServiceData'
-
-// export default class ListService extends Component {
-//     state = {
-//         articles: []
-//     }
-    
-//     componentDidMount() {
-//         client.getEntries({content_type: 'service'}).then((response) => {
-//             response.items.sort((a,b) => a.fields.contentOrder < b.fields.contentOrder ? -1 : 1);
-//             this.setState({articles: response.items})
-//         })
-//     } 
-//     render() {
-//         return (
-//             <>
-//                 <ListServiceData service={this.state.articles} />
-//             </>
-//         )
-//     }
-// }

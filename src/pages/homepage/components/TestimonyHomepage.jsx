@@ -18,7 +18,7 @@ function TestimonyHomepage() {
                 {
                     articles.map((article, index) => {
                         return (article.fields.showOnHomepage === true) ? (
-                            <div key={index} className='flex flex-col justify-between gap-5 bg-white text-left rounded-2xl p-6'>
+                            <div key={article.sys.id} className='flex flex-col justify-between gap-5 bg-white text-left rounded-2xl p-6'>
                                 <p className='worksans text-gray-600 italic text-[14px] sm:text-[16px] text-left'>{article.fields.testimony}</p>
                                 <div className='flex items-center gap-3'>
                                     <span className='bg-amber-100 text-amber-500 text-center leading-[40px] w-10 h-10 rounded-lg worksans-500 text-[20px]'>{article.fields.reviewerName.match(/\b(\w)/g).join('')}</span>

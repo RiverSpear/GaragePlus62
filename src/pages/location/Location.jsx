@@ -32,6 +32,7 @@ function Location() {
         <>
             <div>
                 <Navbar/>
+                <div className='blob'></div>
                 <div className='flex flex-col gap-44 bg-[#F4F4F4] pt-44'>
                     <div className='flex flex-col items-center gap-20'>
                         <div className='flex flex-col items-center gap-5 text-center px-10 lg:px-32'>
@@ -64,10 +65,10 @@ function Location() {
                                             </a>
                                         </div>
                                         <div className='map-container'>
-                                            <div dangerouslySetInnerHTML={{ __html: article.fields.googleMapsEmbed }} width="600" height="450" frameborder="0" allowfullscreen></div>
+                                            <div dangerouslySetInnerHTML={{ __html: article.fields.googleMapsEmbed }} width="600" height="450" frameBorder="0" allowFullScreen></div>
                                         </div>
-                                        <a href={article.fields.googleMapsLink}  className='flex items-center gap-2 bg-black px-5 py-3 worksans rounded-full w-max'>
-                                            <span className='bg-white p-2 rounded-full'>
+                                        <a href={article.fields.googleMapsLink} className='group flex items-center gap-2 bg-black px-5 py-3 worksans rounded-full w-max'>
+                                            <span className='group-hover:rotate-45 bg-white duration-200 p-2 rounded-full'>
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
                                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                                                 </svg>

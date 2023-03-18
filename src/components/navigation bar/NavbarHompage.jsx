@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import client from '../../client';
 import Loading from '../Loading/Loading';
 
-function Navbar() {
+function NavbarHomepage() {
     const [articles, setArticles] = useState([]);
+    const [header, setHeader] = useState("header")
     const [mobileNavbar, setMobileNavbar] = useState(false)
 
     useEffect(() => {
@@ -13,18 +14,33 @@ function Navbar() {
             .catch(console.error);
     }, []);
 
+    const listenScrollEvent = (event) => {
+        if (window.scrollY < 73) {
+            return setHeader("header")
+        } else if (window.scrollY > 70) {
+            return setHeader("header2")
+        } 
+    }
+    
+    useEffect(() => {
+        window.addEventListener('scroll', listenScrollEvent);
+    
+    return () =>
+        window.removeEventListener('scroll', listenScrollEvent);
+    }, []);
+
     if (!articles) return <Loading/>;
     return (
         <>
             {
                 articles.map((article, index) => (
                     <div key={index}>
-                        <div className='fixed z-20 bg-white w-full shadow-[0_25px_50px_-25px_rgba(148,163,184,0.35)]'>
+                        <div className={`fixed z-20 w-full ${header}`}>
                             <div className='flex items-center justify-between gap-10 worksans px-5 lg:px-32'>
                             <Link to='/'>
                                 <img src={'https:' + article.fields.logo.fields.file.url} alt="" className="w-16 md:w-20"/>
                             </Link>
-                                <div className='hidden md:flex gap-10 text-black'>
+                                <div className='hidden md:flex gap-10'>
                                     <Link to='/' className='hover-underline-animation'>Home</Link>
                                     <Link to='/servis' className='hover-underline-animation'>Servis</Link>
                                     <Link to='/lokasi' className='hover-underline-animation'>Lokasi</Link>
@@ -65,4 +81,4 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default NavbarHomepage

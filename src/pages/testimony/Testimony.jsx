@@ -23,12 +23,10 @@ function Testimony() {
         <>
             <Navbar/>
             <div className='flex flex-col gap-44 bg-[#F4F4F4] pt-44'>
-                <div className='flex flex-col items-center gap-20'>
+                <div className='blob'></div>
+                <div className='flex flex-col items-center gap-20 z-10'>
                     <div className='flex flex-col items-center gap-10 text-center px-5 lg:px-32'>
-                        <div className='flex flex-col items-center gap-3'>
-                            <p className='worksans-500 text-amber-500 tracking-widest uppercase'>Testimoni</p>
-                            <p className='worksans-500 text-[31px] md:text-[48px] text-center'>Apa yang pelanggan katakan kepada kami</p>
-                        </div>
+                        <p className='worksans-500 text-[31px] md:text-[48px] text-center w-full md:w-3/4'>Apa yang Mereka Katakan Tentang Layanan Kami</p>
                         <span className='worksans text-gray-700'>Ingin memberikan testimoni ? Silahkan <Link to="/kontak" className='underline'>hubungi tim kami.</Link></span>
                     </div>
                     <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-5 md:px-20 xl:px-32'>

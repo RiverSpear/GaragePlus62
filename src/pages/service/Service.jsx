@@ -26,6 +26,7 @@ function Service() {
     return (
         <>
             <Navbar/>
+            <div className='blob'></div>
             <div className='flex flex-col gap-44 bg-[#F4F4F4] pt-44 z-20'>
                 <div className='flex flex-col items-center gap-5 text-center px-10 lg:px-32'>
                     <p className='text-[31px] sm:text-[48px] worksans-500'>Produk Servis</p>

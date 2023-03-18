@@ -49,8 +49,8 @@ function ListLocationHomepage() {
                                         <img src={tiktok_icon} alt="Tiktok icons created by Pixel perfect - Flaticon" title="tiktok icons" width={24} longdesc="https://www.flaticon.com/free-icons/tiktok" />
                                     </a>
                                 </div>
-                                <a href={article.fields.googleMapsLink} target="_blank" rel='noreferrer' className='flex items-center gap-2 bg-black px-5 py-3 worksans rounded-full w-max'>
-                                    <span className='bg-white p-2 rounded-full'>
+                                <a href={article.fields.googleMapsLink} target="_blank" rel='noreferrer' className='group flex items-center gap-2 bg-black px-5 py-3 worksans rounded-full w-max'>
+                                    <span className='group-hover:rotate-45 bg-white duration-200 p-2 rounded-full'>
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                                         </svg>

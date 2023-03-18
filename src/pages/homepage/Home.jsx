@@ -9,14 +9,14 @@ import MarketingBox from '../../components/marketing box/MarketingBox'
 import Chat from '../../components/chat/Chat'
 import AboutHomepage from './components/AboutHomepage'
 import TestimonyHomepage from './components/TestimonyHomepage'
-import Navbar from '../../components/navigation bar/Navbar'
+import NavbarHomepage from '../../components/navigation bar/NavbarHompage'
 
 function Home() {
     return (
         <>
             <div className='flex flex-col gap-56 bg-[#f4f4f4]'>
                 <div>
-                    <Navbar/>
+                    <NavbarHomepage/>
                     <AboutHomepage/>
                 </div>
                 <div className='flex flex-col items-center gap-20 px-10 md:px-28'>
@@ -25,8 +25,8 @@ function Home() {
                         <p className='worksans text-gray-700'>Anda dapat memilih berbagai paket servis motor sesuai dengan kebutuhan Anda </p>
                     </div>
                     <ListService/>
-                    <Link to='/servis' className='flex items-center gap-2 bg-black px-5 py-3 worksans rounded-full w-max'>
-                        <span className='bg-white p-2 rounded-full'>
+                    <Link to='/servis' className='group flex items-center gap-2 bg-black px-5 py-3 worksans rounded-full w-max'>
+                        <span className='group-hover:rotate-45 bg-white p-2 rounded-full duration-200'>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                             </svg>
@@ -48,10 +48,10 @@ function Home() {
                 </div>
                 <div className='flex flex-col lg:flex-row justify-between gap-20 px-5 md:px-20 xl:px-32'>
                     <div className='flex flex-col gap-5 w-full lg:w-1/2'>
-                        <p className='worksans-600 text-[25px] sm:text-[39px] text-neutral-800'>Frequently Asked Questions</p>
+                        <p className='worksans-600 text-[25px] sm:text-[39px] text-neutral-800 capitalize'>Yang sering ditanyakan</p>
                         <p className='text-[16px] text-slate-700 worksans w-full lg:w-3/4'>Punya pertanyaan? Cari pertanyaan dan jawabanmu di daftar kami.</p>
-                        <Link to='/faq' className='flex items-center gap-2 bg-black px-5 py-3 worksans rounded-full w-max'>
-                            <span className='bg-white p-2 rounded-full'>
+                        <Link to='/faq' className='group flex items-center gap-2 bg-black px-5 py-3 worksans rounded-full w-max'>
+                            <span className='group-hover:rotate-45 bg-white duration-200 p-2 rounded-full'>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                                 </svg>
@@ -65,9 +65,9 @@ function Home() {
                 </div>
                 <div className='flex flex-col gap-16 bg-gray-100 text-center px-5 md:px-20 xl:px-40'>
                     <div className='flex flex-col sm:flex-row items-center justify-between gap-10'>
-                        <p className='text-[25px] sm:text-[39px] worksans-600 capitalize'>Review pelanggan</p>
-                        <Link to='/testimoni' className='flex items-center gap-2 bg-black px-5 py-3 worksans rounded-full w-max'>
-                            <span className='bg-white p-2 rounded-full'>
+                        <p className='text-[25px] sm:text-[39px] worksans-600 capitalize'>Suara pelanggan</p>
+                        <Link to='/testimoni' className='group flex items-center gap-2 bg-black px-5 py-3 worksans rounded-full w-max'>
+                            <span className='group-hover:rotate-45 bg-white duration-200 p-2 rounded-full'>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                                 </svg>
