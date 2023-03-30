@@ -22,7 +22,7 @@ function Testimony() {
     return (
         <>
             <Navbar/>
-            <div className='flex flex-col gap-44 bg-[#F4F4F4] pt-44'>
+            <div className='flex flex-col gap-44 bg-[#faf9f9] pt-44'>
                 <div className='blob'></div>
                 <div className='flex flex-col items-center gap-20 z-10'>
                     <div className='flex flex-col items-center gap-10 text-center px-5 lg:px-32'>

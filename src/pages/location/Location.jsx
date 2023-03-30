@@ -33,7 +33,7 @@ function Location() {
             <div>
                 <Navbar/>
                 <div className='blob'></div>
-                <div className='flex flex-col gap-44 bg-[#F4F4F4] pt-44'>
+                <div className='flex flex-col gap-44 bg-[#faf9f9] pt-44'>
                     <div className='flex flex-col items-center gap-20'>
                         <div className='flex flex-col items-center gap-5 text-center px-10 lg:px-32'>
                             <p className='text-[31px] sm:text-[48px] worksans-500'>Lokasi Bengkel</p>

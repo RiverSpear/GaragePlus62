@@ -24,7 +24,7 @@ function Faq() {
         <>
             <Navbar/>
             <div className='blob'></div>
-            <div className='flex flex-col gap-44 bg-[#F4F4F4] pt-44'>
+            <div className='flex flex-col gap-44 bg-[#faf9f9] pt-44'>
                 <div className='flex justify-center'>
                     <div className='flex flex-col gap-10 w-full md:w-3/4 lg:w-1/2 px-5'>
                         <div className='flex flex-col gap-5'>

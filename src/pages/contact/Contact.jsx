@@ -31,7 +31,7 @@ function Contact() {
         <>
             <Navbar/>
             <div className='blob'></div>
-            <div className='flex flex-col gap-44 bg-[#f4f4f4] pt-44'>
+            <div className='flex flex-col gap-44 bg-[#faf9f9] pt-44'>
                 <div className='flex flex-col items-center gap-20 px-5 md:px-20 xl:px-32'>
                     <div className='flex flex-col items-center gap-5 text-center px-10 lg:px-32'>
                         <p className='text-[31px] sm:text-[48px] worksans-500'>Hubungi Kami</p>

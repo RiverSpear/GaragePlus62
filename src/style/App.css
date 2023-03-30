@@ -116,7 +116,7 @@ iframe {
 .blob{
     background-image: url('../asset/icon/blob.svg');
     background-repeat: no-repeat;
-    position: fixed;
+    position: absolute;
     top: -100px;
     left: -120px;
     width: 350px;

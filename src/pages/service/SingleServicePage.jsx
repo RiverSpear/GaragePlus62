@@ -26,9 +26,9 @@ function SingleServicePage({ match }) {
         <>
             <Navbar/>
             <div className='blob'></div>
-            <div className='flex flex-col gap-44 bg-[#F4F4F4] pt-44'>
+            <div className='flex flex-col gap-44 bg-[#faf9f9] pt-44'>
                 <div className='flex flex-col items-center gap-20 px-10 lg:px-32'>
-                    <p className='worksans-500 text-[31px] md:text-[48px] text-center'>{singleArticles.fields.servicePackageName}</p>
+                    <p className='worksans-500 text-[31px] md:text-[48px] text-center w-full sm:w-3/4 z-10'>{singleArticles.fields.servicePackageName}</p>
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
                         {singleArticles.fields.detailService.map((detailService, index) => (
                             <div key={index} className="flex flex-col items-center gap-14 sm:gap-20 bg-white px-10 py-14 rounded-2xl">

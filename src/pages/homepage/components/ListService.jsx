@@ -18,7 +18,7 @@ function ListService() {
             <div className='flex flex-wrap justify-center gap-10'>
                 {
                     articles.map((article, index) => (
-                        <Link to={`/servis/${article.fields.slug}`} key={index} className="flex flex-col justify-between gap-5 bg-white p-10 rounded-2xl hover:shadow-xl hover:shadow-gray-200 duration-200 hover:scale-[1.02] w-[375px]">
+                        <Link to={`/servis/${article.fields.slug}`} key={index} className="flex flex-col justify-between gap-5 bg-white p-10 rounded-2xl shadow-sm hover:shadow-xl hover:shadow-gray-200 duration-200 hover:scale-[1.02] w-[375px]">
                             <div className='flex flex-col gap-5'>
                                 <img src={'https:' + article.fields.headlinePhoto.fields.file.url} alt="" className='w-full h-[175px] rounded-2xl'/>
                                 <div className='flex justify-between items-start gap-5'>
