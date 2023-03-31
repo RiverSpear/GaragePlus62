@@ -25,7 +25,6 @@ function Service() {
             .catch(console.error);
     }, []);
 
-    
     const priceSplitter = (number) =>
         number && number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 

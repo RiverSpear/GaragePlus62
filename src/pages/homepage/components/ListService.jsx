@@ -8,8 +8,16 @@ function ListService() {
 
     useEffect(() => {
         client
-            .getEntries({ content_type: 'service' })
-            .then((response) => setArticles(response.items))
+            .getEntries({
+                content_type: 'service',
+                order: 'fields.contentOrder',
+            })
+            .then((response) => {
+                const sortedArticles = response.items.sort(
+                    (a, b) => a.fields.contentOrder - b.fields.contentOrder
+                );
+                setArticles(sortedArticles);
+            })
             .catch(console.error);
     }, []);
 
