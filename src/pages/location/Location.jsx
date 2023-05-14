@@ -42,7 +42,7 @@ function Location() {
                         <div className='flex flex-wrap justify-center gap-10 px-0 md:px-20 xl:px-32'>
                             {
                                 articles.map((article, index) => (
-                                    <div key={index} className='flex flex-col gap-7 bg-red-100 p-5 md:p-8 rounded-2xl w-[375px] md:w-[500px] duration-200'>
+                                    <div key={index} className='flex flex-col gap-7 bg-white p-5 md:p-8 rounded-2xl w-[375px] md:w-[500px] duration-200'>
                                         <div className='flex flex-col gap-3'>
                                             {
                                                 article.fields.type === true ? (
