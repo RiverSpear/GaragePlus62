@@ -26,7 +26,7 @@ function Faq() {
             <div className='blob'></div>
             <div className='flex flex-col gap-44 bg-[#faf9f9] pt-44'>
                 <div className='flex justify-center'>
-                    <div className='flex flex-col gap-10 w-full md:w-3/4 lg:w-1/2 px-5'>
+                    <div className='flex flex-col gap-10 w-full md:w-3/4 lg:w-1/2 px-5 z-10'>
                         <div className='flex flex-col gap-5'>
                             <div className='flex items-center gap-2 text-[14px] text-gray-500 worksans'>
                                 <Link to="/" className='cursor-pointer hover:text-amber-500'>Garage Plus62</Link>

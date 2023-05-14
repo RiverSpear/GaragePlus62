@@ -29,7 +29,7 @@ function ListService() {
                     <Link
                         to={`/servis/${article.fields.slug}`}
                         key={index}
-                        className='flex flex-col justify-between gap-5 bg-white p-10 rounded-2xl shadow-sm hover:shadow-xl hover:shadow-gray-200 duration-200 hover:scale-[1.02] w-[375px]'
+                        className='flex flex-col justify-between gap-5 bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl hover:shadow-gray-200 duration-200 hover:scale-[1.02] w-[375px]'
                     >
                         <div className='flex flex-col gap-5'>
                             <img

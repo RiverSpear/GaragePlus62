@@ -63,7 +63,7 @@ function Home() {
                         <Faq/>
                     </div>
                 </div>
-                <div className='flex flex-col gap-16 bg-gray-100 text-center px-5 md:px-20 xl:px-40'>
+                <div className='flex flex-col gap-16 text-center px-5 md:px-20 xl:px-40'>
                     <div className='flex flex-col sm:flex-row items-center justify-between gap-10'>
                         <p className='text-[25px] sm:text-[39px] worksans-600 capitalize'>Suara pelanggan</p>
                         <Link to='/testimoni' className='group flex items-center gap-2 bg-black px-5 py-3 worksans rounded-full w-max'>

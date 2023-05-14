@@ -34,7 +34,7 @@ function Service() {
             <Navbar />
             <div className='blob'></div>
             <div className='flex flex-col gap-44 bg-[#faf9f9] pt-44 z-20'>
-                <div className='flex flex-col items-center gap-5 text-center px-10 lg:px-32'>
+                <div className='flex flex-col items-center gap-5 text-center px-10 lg:px-32 z-10'>
                     <p className='text-[31px] sm:text-[48px] worksans-500'>
                         Produk Servis
                     </p>
@@ -51,7 +51,7 @@ function Service() {
                         <Link
                             to={`/servis/${article.fields.slug}`}
                             key={article.sys.id}
-                            className='flex flex-col justify-between gap-5 bg-white p-10 rounded-2xl shadow-sm hover:shadow-xl hover:shadow-gray-200 hover:scale-[1.02] duration-200 w-[375px]'
+                            className='flex flex-col justify-between gap-5 bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl hover:shadow-gray-200 hover:scale-[1.02] duration-200 w-[375px]'
                         >
                             <div className='flex flex-col gap-5'>
                                 <img

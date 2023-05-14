@@ -16,11 +16,11 @@ function Footer() {
     if (!articles) return <Loading/>;
     return (
         <>
-            <div className='flex flex-wrap gap-20 bg-white mx-5 md:mx-20 xl:mx-32 p-14 rounded-3xl mb-32'>
+            <div className='flex flex-wrap gap-20 bg-white px-10 md:px-20 xl:px-32 py-32 rounded-3xl'>
                 {
                     articles.map((article, index) => (
                         <div key={index} className='flex flex-wrap gap-32'>
-                            <div className='flex flex-col gap-10 w-[250px]'>
+                            <div className='flex flex-col gap-10 w-[350px]'>
                                 <p className='text-amber-500 worksans-500'>{article.fields.garageName}</p>
                                 <p className='worksans text-gray-700 text-[15px]'>{article.fields.headlineDescription}</p>
                             </div>
@@ -35,7 +35,7 @@ function Footer() {
                             </div>
                             <div className='flex flex-col gap-10'>
                                 <p className='text-amber-500 worksans-500'>Jam Operasional</p>
-                                <table className='worksans text-gray-700'>
+                                <table className='worksans text-gray-700 whitespace-nowrap'>
                                     <tbody>
                                         <tr>
                                             <td className='pb-3 pr-14'>Senin - Sabtu</td>
@@ -65,26 +65,3 @@ function Footer() {
 }
 
 export default Footer
-
-// import React, { Component } from 'react'
-// import client from '../../client'
-// import FooterData from './FooterData'
-
-// export default class Footer extends Component {
-//     state = {
-//         articles: []
-//     }
-    
-//     componentDidMount() {
-//         client.getEntries({content_type: 'aboutUs'}).then((response) => {
-//             this.setState({articles: response.items})
-//         })
-//     } 
-//     render() {
-//         return (
-//             <>
-//                 <FooterData aboutus={this.state.articles} />
-//             </>
-//         )
-//     }
-// }

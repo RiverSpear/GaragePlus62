@@ -36,7 +36,7 @@ function Chat() {
     return (
         <>
             <span
-                className='fixed bottom-10 right-10 z-10 bg-white p-3 rounded-full shadow shadow-gray-300 cursor-pointer duration-200'
+                className='fixed bottom-5 right-5 z-10 bg-white p-3 rounded-full shadow shadow-gray-300 cursor-pointer duration-200'
                 onClick={() => setPopup(true)}
             >
                 <svg

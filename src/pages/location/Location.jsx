@@ -35,14 +35,14 @@ function Location() {
                 <div className='blob'></div>
                 <div className='flex flex-col gap-44 bg-[#faf9f9] pt-44'>
                     <div className='flex flex-col items-center gap-20'>
-                        <div className='flex flex-col items-center gap-5 text-center px-10 lg:px-32'>
+                        <div className='flex flex-col items-center gap-5 text-center px-10 lg:px-32 z-10'>
                             <p className='text-[31px] sm:text-[48px] worksans-500'>Lokasi Bengkel</p>
                             <p className='worksans text-slate-500 w-full sm:w-3/4 md:w-1/2 text-center leading-7'>Kunjungi bengkel kami yang mudah dijangkau dari lokasi anda demi mendapatkan layanan terbaik untuk kendaraan Anda. - <Link to='/kontak' className='underline'>Hubungi Kami Sekarang!</Link></p>
                         </div>
-                        <div className='flex flex-wrap justify-center gap-10 px-5 md:px-20 xl:px-32'>
+                        <div className='flex flex-wrap justify-center gap-10 px-0 md:px-20 xl:px-32'>
                             {
                                 articles.map((article, index) => (
-                                    <div key={index} className='flex flex-col gap-7 bg-white p-5 md:p-10 rounded-2xl w-[425px] md:w-[500px] duration-200'>
+                                    <div key={index} className='flex flex-col gap-7 bg-red-100 p-5 md:p-8 rounded-2xl w-[375px] md:w-[500px] duration-200'>
                                         <div className='flex flex-col gap-3'>
                                             {
                                                 article.fields.type === true ? (
@@ -65,7 +65,7 @@ function Location() {
                                             </a>
                                         </div>
                                         <div className='map-container'>
-                                            <div dangerouslySetInnerHTML={{ __html: article.fields.googleMapsEmbed }} width="600" height="450" frameBorder="0" allowFullScreen></div>
+                                            <div dangerouslySetInnerHTML={{ __html: article.fields.googleMapsEmbed }} width="575" height="450" frameBorder="0" allowFullScreen></div>
                                         </div>
                                         <a href={article.fields.googleMapsLink} className='group flex items-center gap-2 bg-black px-5 py-3 worksans rounded-full w-max'>
                                             <span className='group-hover:rotate-45 bg-white duration-200 p-2 rounded-full'>

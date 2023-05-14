@@ -32,7 +32,7 @@ function Contact() {
             <Navbar/>
             <div className='blob'></div>
             <div className='flex flex-col gap-44 bg-[#faf9f9] pt-44'>
-                <div className='flex flex-col items-center gap-20 px-5 md:px-20 xl:px-32'>
+                <div className='flex flex-col items-center gap-20 px-5 md:px-20 xl:px-32 z-10'>
                     <div className='flex flex-col items-center gap-5 text-center px-10 lg:px-32'>
                         <p className='text-[31px] sm:text-[48px] worksans-500'>Hubungi Kami</p>
                         <p className='worksans text-slate-500 w-full sm:w-3/4 md:w-1/2 text-center leading-7'>Kami Siap Memberikan Layanan Perawatan Kendaraan yang Prima - Kunjungi Bengkel Kami atau <Link to='/kontak' className='underline'>Hubungi Kami Sekarang!</Link></p>
