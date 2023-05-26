@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://garage62.co/sitemap.xml
+Sitemap: https://garageplus62.site/sitemap.xml

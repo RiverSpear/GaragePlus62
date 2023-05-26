@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://garage62.co/</loc>
+    <loc>https://garageplus62.site/</loc>
     <priority>1.0</priority>
-    <changefreq>daily</changefreq>
+    <changefreq>quarterly</changefreq>
   </url>
   <url>
-    <loc>https://garage62.co/servis</loc>
+    <loc>https://garageplus62.site/servis</loc>
     <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
+    <changefreq>quarterly</changefreq>
   </url>
   <url>
-    <loc>https://garage62.co/lokasi</loc>
+    <loc>https://garageplus62.site/lokasi</loc>
     <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
+    <changefreq>quarterly</changefreq>
   </url>
   <url>
-    <loc>https://garage62.co/faq</loc>
+    <loc>https://garageplus62.site/faq</loc>
     <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
+    <changefreq>quarterly</changefreq>
   </url>
   <url>
-    <loc>https://garage62.co/testimoni</loc>
+    <loc>https://garageplus62.site/testimoni</loc>
     <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
+    <changefreq>quarterly</changefreq>
   </url>
 </urlset>
