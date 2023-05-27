@@ -36,7 +36,7 @@ function NavbarHomepage() {
                 <div key={index}>
                     <div className={`fixed z-20 w-full ${header}`}>
                         <div className='flex items-center justify-between gap-10 worksans px-5 lg:px-32'>
-                            <Link to='/'>
+                            <Link to='/home'>
                                 <img
                                     src={
                                         'https:' +
@@ -99,7 +99,7 @@ function NavbarHomepage() {
                                             />
                                         </svg>
                                     </span>
-                                    <p className='capitalize text-white text-[14px]'>
+                                    <p className='capitalize text-black text-[14px]'>
                                         Hubungi kami
                                     </p>
                                 </Link>

@@ -21,11 +21,11 @@ function Footer() {
                     articles.map((article, index) => (
                         <div key={index} className='flex flex-wrap gap-32'>
                             <div className='flex flex-col gap-10 w-[350px]'>
-                                <p className='text-amber-500 worksans-500'>{article.fields.garageName}</p>
+                                <p className='text-amber-500 worksans-600'>{article.fields.garageName}</p>
                                 <p className='worksans text-gray-700 text-[15px]'>{article.fields.headlineDescription}</p>
                             </div>
                             <div className='flex flex-col gap-10'>
-                                <p className='text-amber-500 worksans-500'>Quick Links</p>
+                                <p className='text-amber-500 worksans-600'>Quick Links</p>
                                 <div className='flex flex-col gap-3 worksans text-gray-700'>
                                     <Link to="/servis" className='hover:text-amber-500'>Services</Link>
                                     <Link to="/lokasi" className='hover:text-amber-500'>Locations</Link>
@@ -34,7 +34,7 @@ function Footer() {
                                 </div>
                             </div>
                             <div className='flex flex-col gap-10'>
-                                <p className='text-amber-500 worksans-500'>Jam Operasional</p>
+                                <p className='text-amber-500 worksans-600'>Jam Operasional</p>
                                 <table className='worksans text-gray-700 whitespace-nowrap'>
                                     <tbody>
                                         <tr>
@@ -56,7 +56,7 @@ function Footer() {
                     ))
                 }
                 <div className='flex flex-col gap-10'>
-                    <p className='text-amber-500 worksans-500'>Lokasi</p>
+                    <p className='text-amber-500 worksans-600'>Lokasi</p>
                     <LocationFooter/>
                 </div>
             </div>

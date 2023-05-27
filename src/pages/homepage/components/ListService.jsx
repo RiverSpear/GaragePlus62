@@ -38,7 +38,7 @@ function ListService() {
                                     article.fields.headlinePhoto.fields.file.url
                                 }
                                 alt=''
-                                className='w-full h-[175px] rounded-2xl'
+                                className='w-auto h-[175px] rounded-2xl'
                             />
                             <div className='flex justify-between items-start gap-5'>
                                 <p className='worksans-500 text-[18px]'>
