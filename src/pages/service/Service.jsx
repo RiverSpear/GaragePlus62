@@ -61,18 +61,20 @@ function Service() {
                             className='flex flex-col justify-between gap-5 bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl hover:shadow-gray-200 hover:scale-[1.02] duration-200 w-[375px]'
                         >
                             <div className='flex flex-col gap-5'>
-                                <img
-                                    data-src={
-                                        'https:' +
-                                        article.fields.headlinePhoto.fields.file
-                                            .url
-                                    }
-                                    alt={
-                                        article.fields.headlinePhoto.fields
-                                            .title
-                                    }
-                                    className='lazyload w-full h-[175px] rounded-2xl'
-                                />
+                                <span className='h-[175px]'>
+                                    <img
+                                        data-src={
+                                            'https:' +
+                                            article.fields.headlinePhoto.fields
+                                                .file.url
+                                        }
+                                        alt={
+                                            article.fields.headlinePhoto.fields
+                                                .title
+                                        }
+                                        className='lazyload w-full h-auto rounded-2xl'
+                                    />
+                                </span>
                                 <div className='flex justify-between items-center gap-5'>
                                     <p className='worksans-500 text-[18px]'>
                                         {article.fields.servicePackageName}

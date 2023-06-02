@@ -45,7 +45,7 @@ function ListService() {
                                     article.fields.headlinePhoto.fields.file.url
                                 }
                                 alt={article.fields.headlinePhoto.fields.title}
-                                className='lazyload w-auto h-[175px] rounded-2xl'
+                                className='lazyload h-[175px] rounded-2xl'
                             />
                             <div className='flex justify-between items-start gap-5'>
                                 <p className='worksans-500 text-[18px]'>

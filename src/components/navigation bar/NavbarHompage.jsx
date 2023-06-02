@@ -36,14 +36,14 @@ function NavbarHomepage() {
                 <div key={index}>
                     <div className={`fixed z-20 w-full ${header}`}>
                         <div className='flex items-center justify-between gap-10 worksans px-5 lg:px-32'>
-                            <Link to='/home'>
+                            <Link to='/' className='w-16 md:w-20'>
                                 <img
                                     src={
                                         'https:' +
                                         article.fields.logo.fields.file.url
                                     }
                                     alt='logo'
-                                    className='w-16 md:w-20'
+                                    className='w-full h-auto'
                                 />
                             </Link>
                             <div className='hidden md:flex gap-10'>
