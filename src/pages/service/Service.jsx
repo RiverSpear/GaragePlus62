@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import 'lazysizes';
 import client from '../../client'
 import { Link } from 'react-router-dom';
 
@@ -23,6 +24,12 @@ function Service() {
                 setArticles(sortedArticles);
             })
             .catch(console.error);
+    }, []);
+
+    useEffect(() => {
+        if (typeof window !== 'undefined' && window.lazySizes) {
+            window.lazySizes.init();
+        }
     }, []);
 
     const priceSplitter = (number) =>
@@ -55,13 +62,16 @@ function Service() {
                         >
                             <div className='flex flex-col gap-5'>
                                 <img
-                                    src={
+                                    data-src={
                                         'https:' +
                                         article.fields.headlinePhoto.fields.file
                                             .url
                                     }
-                                    alt=''
-                                    className='w-full h-[175px] rounded-2xl'
+                                    alt={
+                                        article.fields.headlinePhoto.fields
+                                            .title
+                                    }
+                                    className='lazyload w-full h-[175px] rounded-2xl'
                                 />
                                 <div className='flex justify-between items-center gap-5'>
                                     <p className='worksans-500 text-[18px]'>
@@ -75,14 +85,16 @@ function Service() {
                             </div>
                             <p className='bg-gray-100 text-gray-500 worksans-500 text-center py-3 w-full rounded-full'>
                                 Mulai dari Rp.{' '}
-                                {priceSplitter(article.fields.detailService
-                                    .map(
-                                        (detailService) =>
-                                            detailService.fields.price
-                                    )
-                                    .reduce((prev, cur) =>
-                                        cur.price < prev.price ? cur : prev
-                                    ))}
+                                {priceSplitter(
+                                    article.fields.detailService
+                                        .map(
+                                            (detailService) =>
+                                                detailService.fields.price
+                                        )
+                                        .reduce((prev, cur) =>
+                                            cur.price < prev.price ? cur : prev
+                                        )
+                                )}
                             </p>
                         </Link>
                     ))}

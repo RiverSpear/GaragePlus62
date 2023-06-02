@@ -42,7 +42,7 @@ function NavbarHomepage() {
                                         'https:' +
                                         article.fields.logo.fields.file.url
                                     }
-                                    alt=''
+                                    alt='logo'
                                     className='w-16 md:w-20'
                                 />
                             </Link>

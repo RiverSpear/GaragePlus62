@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import 'lazysizes';
 import { Link } from 'react-router-dom';
 import client from '../../../client';
 import Loading from '../../../components/Loading/Loading';
@@ -21,6 +22,12 @@ function ListService() {
             .catch(console.error);
     }, []);
 
+    useEffect(() => {
+        if (typeof window !== 'undefined' && window.lazySizes) {
+            window.lazySizes.init();
+        }
+    }, []);
+
     if (!articles) return <Loading />;
     return (
         <>
@@ -33,12 +40,12 @@ function ListService() {
                     >
                         <div className='flex flex-col gap-5'>
                             <img
-                                src={
+                                data-src={
                                     'https:' +
                                     article.fields.headlinePhoto.fields.file.url
                                 }
-                                alt=''
-                                className='w-auto h-[175px] rounded-2xl'
+                                alt={article.fields.headlinePhoto.fields.title}
+                                className='lazyload w-auto h-[175px] rounded-2xl'
                             />
                             <div className='flex justify-between items-start gap-5'>
                                 <p className='worksans-500 text-[18px]'>

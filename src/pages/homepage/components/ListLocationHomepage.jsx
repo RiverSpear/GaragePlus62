@@ -30,7 +30,7 @@ function ListLocationHomepage() {
                 {articles.map((article, index) => (
                     <div
                         key={index}
-                        className='flex flex-col gap-5 bg-white p-10 rounded-2xl'
+                        className='flex flex-col gap-5 bg-white p-10 rounded-2xl shadow-lg'
                     >
                         {article.fields.type === true ? (
                             <p className='worksans-600 text-amber-500'>Pusat</p>

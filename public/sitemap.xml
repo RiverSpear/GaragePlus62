@@ -1,22 +1,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://garageplus62.site/</loc>
-<lastmod>2023-07-05</lastmod>
+    <lastmod>2023-07-05</lastmod>
+  </url>
+  <url>
+    <loc>https://garageplus62.site/home</loc>
+    <lastmod>2023-06-02</lastmod>
   </url>
   <url>
     <loc>https://garageplus62.site/servis</loc>
-<lastmod>2023-07-05</lastmod>
+    <lastmod>2023-07-05</lastmod>
   </url>
   <url>
     <loc>https://garageplus62.site/lokasi</loc>
-<lastmod>2023-07-05</lastmod>
+    <lastmod>2023-07-05</lastmod>
   </url>
   <url>
     <loc>https://garageplus62.site/faq</loc>
-<lastmod>2023-07-05</lastmod>
+    <lastmod>2023-07-05</lastmod>
   </url>
   <url>
     <loc>https://garageplus62.site/testimoni</loc>
-<lastmod>2023-07-05</lastmod>
+    <lastmod>2023-07-05</lastmod>
   </url>
 </urlset>
