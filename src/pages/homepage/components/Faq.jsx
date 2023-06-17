@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import client from '../../../client';
 import Loading from '../../../components/Loading/Loading';
+import PageNotFound from '../../error/PageNotFound';
 
 function Faq() {
     const [articles, setArticles] = useState([]);
     const [activeIndex, setActiveIndex] = useState(-1);
+    const [error, setError] = useState(null);
 
     const toggleActiveIndex = (index) => {
         if (index === activeIndex) {
@@ -14,13 +16,23 @@ function Faq() {
         }
     };
 
+    
     useEffect(() => {
-        client.getEntries({ content_type: 'faq' })
-            .then((response) => setArticles(response.items))
-            .catch(console.error);
+        const fetchData = async () => {
+            try {
+                const response = await client.getEntries({
+                    content_type: 'faq',
+                });
+                setArticles(response.items);
+            } catch (err) {
+                setError(err);
+            }
+        };
+        fetchData();
     }, []);
 
-    if (!articles) return <Loading/>;
+    if (!articles) return <Loading />;
+    if (error) return <PageNotFound />;
     return (
         <>
             {

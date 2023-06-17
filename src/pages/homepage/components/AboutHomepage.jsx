@@ -2,17 +2,28 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import client from '../../../client';
 import Loading from '../../../components/Loading/Loading';
+import PageNotFound from '../../error/PageNotFound';
 
 function AboutHomepage() {
     const [articles, setArticles] = useState([]);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        client.getEntries({ content_type: 'aboutUs' })
-            .then((response) => setArticles(response.items))
-            .catch(console.error);
+        const fetchData = async () => {
+            try {
+                const response = await client.getEntries({
+                    content_type: 'aboutUs',
+                });
+                setArticles(response.items);
+            } catch (err) {
+                setError(err);
+            }
+        };
+        fetchData();
     }, []);
 
     if (!articles) return <Loading/>;
+    if (error) return <PageNotFound />;
     return (
         <>
             {

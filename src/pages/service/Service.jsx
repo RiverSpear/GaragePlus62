@@ -7,23 +7,29 @@ import Loading from '../../components/Loading/Loading'
 import Navbar from '../../components/navigation bar/Navbar';
 import Footer from '../../components/footer/Footer';
 import ScrollToTop from '../../components/scroll to top/ScrollToTop';
+import PageNotFound from '../error/PageNotFound';
 
 function Service() {
     const [articles, setArticles] = useState([]);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        client
-            .getEntries({
-                content_type: 'service',
-                order: 'fields.contentOrder',
-            })
-            .then((response) => {
-                const sortedArticles = response.items.sort(
-                    (a, b) => a.fields.contentOrder - b.fields.contentOrder
+        const fetchData = async () => {
+            try {
+                const response = await client.getEntries({
+                    content_type: 'service',
+                    order: 'fields.contentOrder',
+                });
+                setArticles(
+                    response.items.sort(
+                        (a, b) => a.fields.contentOrder - b.fields.contentOrder
+                    )
                 );
-                setArticles(sortedArticles);
-            })
-            .catch(console.error);
+            } catch (err) {
+                setError(err);
+            }
+        };
+        fetchData();
     }, []);
 
     useEffect(() => {
@@ -36,6 +42,7 @@ function Service() {
         number && number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 
     if (!articles) return <Loading/>;
+    if (error) return <PageNotFound />;
     return (
         <>
             <Navbar />
@@ -61,20 +68,18 @@ function Service() {
                             className='flex flex-col justify-between gap-5 bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl hover:shadow-gray-200 hover:scale-[1.02] duration-200 w-[375px]'
                         >
                             <div className='flex flex-col gap-5'>
-                                <span className='h-[175px]'>
-                                    <img
-                                        data-src={
-                                            'https:' +
-                                            article.fields.headlinePhoto.fields
-                                                .file.url
-                                        }
-                                        alt={
-                                            article.fields.headlinePhoto.fields
-                                                .title
-                                        }
-                                        className='lazyload w-full h-auto rounded-2xl'
-                                    />
-                                </span>
+                                <img
+                                    data-src={
+                                        'https:' +
+                                        article.fields.headlinePhoto.fields
+                                            .file.url
+                                    }
+                                    alt={
+                                        article.fields.headlinePhoto.fields
+                                            .title
+                                    }
+                                    className='lazyload w-full h-[175px] rounded-2xl'
+                                />
                                 <div className='flex justify-between items-center gap-5'>
                                     <p className='worksans-500 text-[18px]'>
                                         {article.fields.servicePackageName}

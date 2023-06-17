@@ -4,6 +4,7 @@ import client from '../../client';
 import Footer from '../../components/footer/Footer';
 import Loading from '../../components/Loading/Loading';
 import Navbar from '../../components/navigation bar/Navbar';
+import PageNotFound from '../error/PageNotFound';
 
 export function withRouter(Children) {
     return (props) => {
@@ -14,18 +15,26 @@ export function withRouter(Children) {
 
 function SingleServicePage({ match }) {
     const [singleArticles, setSingleArticles] = useState(null);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        client
-            .getEntries({
-                content_type: 'service',
-                'fields.slug': match.params.slug,
-            })
-            .then((response) => setSingleArticles(response.items[0]))
-            .catch(console.error);
+        const fetchData = async () => {
+            try {
+                const response = await client.getEntries({
+                    content_type: 'service',
+                    'fields.slug': match.params.slug,
+                });
+                setSingleArticles(response.items[0]);
+            } catch (err) {
+                setError(err);
+            }
+        };
+        fetchData();
     }, [match.params.slug]);
 
     if (!singleArticles) return <Loading />;
+    if (error) return <PageNotFound />;
+
     return (
         <>
             <Navbar />

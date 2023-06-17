@@ -6,20 +6,32 @@ import Footer from '../../components/footer/Footer';
 import Loading from '../../components/Loading/Loading';
 import Navbar from '../../components/navigation bar/Navbar';
 import ScrollToTop from '../../components/scroll to top/ScrollToTop';
+import PageNotFound from '../error/PageNotFound';
 
 function Faq() {
     const [articles, setArticles] = useState([]);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        client.getEntries({ content_type: 'faq' })
-            .then((response) => {
-                const sortedArticles = response.items.sort((a, b) => a.fields.contentOrder - b.fields.contentOrder);
-                setArticles(sortedArticles);
-            })
-            .catch(console.error);
+        const fetchData = async () => {
+            try {
+                const response = await client.getEntries({
+                    content_type: 'faq',
+                });
+                setArticles(
+                    response.items.sort(
+                        (a, b) => a.fields.contentOrder - b.fields.contentOrder
+                    )
+                );
+            } catch (err) {
+                setError(err);
+            }
+        };
+        fetchData();
     }, []);
 
     if (!articles) return <Loading/>;
+    if (error) return <PageNotFound />;
     return (
         <>
             <Navbar/>

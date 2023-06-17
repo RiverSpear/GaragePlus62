@@ -9,24 +9,34 @@ import whatsapp_icon from '../../asset/icon/whatsapp.png'
 import instagram_icon from '../../asset/icon/instagram.png'
 import tiktok_icon from '../../asset/icon/tik-tok.png'
 import { Link } from 'react-router-dom';
+import PageNotFound from '../error/PageNotFound';
 
 function Contact() {
     const [articles, setArticles] = useState([]);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        client.getEntries({ content_type: 'location' })
-            .then((response) => {
-                const sortedArticles = response.items.sort((a, b) => {
-                    if (a.fields.type === b.fields.type) return 0;
-                    if (a.fields.type === true) return -1;
-                    return 1;
+        const fetchData = async () => {
+            try {
+                const response = await client.getEntries({
+                    content_type: 'location',
                 });
-                setArticles(sortedArticles)
-            })
-            .catch(console.error);
+                setArticles(
+                    response.items.sort((a, b) => {
+                        if (a.fields.type === b.fields.type) return 0;
+                        if (a.fields.type === true) return -1;
+                        return 1;
+                    })
+                );
+            } catch (err) {
+                setError(err);
+            }
+        };
+        fetchData();
     }, []);
 
-    if (!articles) return <Loading/>;
+    if (!articles) return <Loading />;
+    if (error) return <PageNotFound />;
     return (
         <>
             <Navbar/>

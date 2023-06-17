@@ -6,19 +6,28 @@ import Footer from '../../components/footer/Footer';
 import Loading from '../../components/Loading/Loading';
 import Navbar from '../../components/navigation bar/Navbar';
 import ScrollToTop from '../../components/scroll to top/ScrollToTop';
+import PageNotFound from '../error/PageNotFound';
 
 function Testimony() {
     const [articles, setArticles] = useState([]);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        client.getEntries({ content_type: 'testimonial' })
-            .then((response) => (
+        const fetchData = async () => {
+            try {
+                const response = await client.getEntries({
+                    content_type: 'testimonial',
+                });
                 setArticles(response.items)
-            ))
-            .catch(console.error);
+            } catch (err) {
+                setError(err);
+            }
+        };
+        fetchData();
     }, []);
 
-    if (!articles) return <Loading/>;
+    if (!articles) return <Loading />;
+    if (error) return <PageNotFound />;
     return (
         <>
             <Navbar/>

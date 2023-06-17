@@ -2,24 +2,31 @@ import React, { useEffect, useState } from 'react';
 import 'lazysizes';
 import { Link } from 'react-router-dom';
 import client from '../../../client';
+
 import Loading from '../../../components/Loading/Loading';
+import PageNotFound from '../../error/PageNotFound'
 
 function ListService() {
     const [articles, setArticles] = useState([]);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        client
-            .getEntries({
-                content_type: 'service',
-                order: 'fields.contentOrder',
-            })
-            .then((response) => {
-                const sortedArticles = response.items.sort(
-                    (a, b) => a.fields.contentOrder - b.fields.contentOrder
+        const fetchData = async () => {
+            try {
+                const response = await client.getEntries({
+                    content_type: 'service',
+                    order: 'fields.contentOrder',
+                });
+                setArticles(
+                    response.items.sort(
+                        (a, b) => a.fields.contentOrder - b.fields.contentOrder
+                    )
                 );
-                setArticles(sortedArticles);
-            })
-            .catch(console.error);
+            } catch (err) {
+                setError(err);
+            }
+        };
+        fetchData();
     }, []);
 
     useEffect(() => {
@@ -29,6 +36,7 @@ function ListService() {
     }, []);
 
     if (!articles) return <Loading />;
+    if (error) return <PageNotFound />;
     return (
         <>
             <div className='flex flex-wrap justify-center gap-10'>

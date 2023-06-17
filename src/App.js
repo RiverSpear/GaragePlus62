@@ -18,6 +18,7 @@ import Faq from './pages/faq/Faq';
 import SingleServicePage from './pages/service/SingleServicePage';
 import Contact from './pages/contact/Contact';
 import Testimony from './pages/testimony/Testimony';
+import PageNotFound from './pages/error/PageNotFound';
 
 function App() {
     return (
@@ -32,6 +33,7 @@ function App() {
                     <Route path="/servis/:slug" element={<SingleServicePage/>}/>
                     <Route path="/kontak" exact element={<Contact/>}/>
                     <Route path="/testimoni" exact element={<Testimony/>}/>
+                    <Route path="/*" element={<PageNotFound/>}/>
                 </Routes>
             </Router>
         </>
