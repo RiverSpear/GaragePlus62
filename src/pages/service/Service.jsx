@@ -91,6 +91,7 @@ function Service() {
                                                     </p>
                                                 );
                                             }
+                                            return null;
                                         })}
                                     <p className="worksans-500">
                                         {article.fields.servicePackageName}
@@ -104,7 +105,7 @@ function Service() {
                                 <div className="flex justify-between items-center">
                                     {article.fields.detailService
                                         .map((detailService) => (
-                                            <div>
+                                            <div key={detailService.sys.id}>
                                                 <p className="worksans-500 text-[12px]">
                                                     Mulai dari
                                                 </p>
@@ -120,7 +121,7 @@ function Service() {
                                             </div>
                                         ))
                                         .reduce((prev, cur) =>
-                                            cur.price < prev.price ? cur : prev
+                                            cur.props.children[1].props.children < prev.props.children[1].props.children ? cur : prev
                                         )}
                                     <Link
                                         to={`/servis/${article.fields.slug}`}

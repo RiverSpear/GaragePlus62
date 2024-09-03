@@ -22,7 +22,6 @@ function ListService() {
                         (a, b) => a.fields.contentOrder - b.fields.contentOrder
                     )
                 );
-                console.log(response.items);
             } catch (err) {
                 setError(err);
             }
@@ -69,6 +68,7 @@ function ListService() {
                                                 </p>
                                             );
                                         }
+                                        return null; // Add this line to return a value for non-matching cases
                                     })}
                                 <p className="worksans-500">
                                     {article.fields.servicePackageName}
@@ -81,7 +81,7 @@ function ListService() {
                             <div className="flex justify-between items-center">
                                 {article.fields.detailService
                                     .map((detailService) => (
-                                        <div>
+                                        <div key={detailService.sys.id}>
                                             <p className="worksans-500 text-[12px]">
                                                 Mulai dari
                                             </p>
@@ -97,7 +97,7 @@ function ListService() {
                                         </div>
                                     ))
                                     .reduce((prev, cur) =>
-                                        cur.price < prev.price ? cur : prev
+                                        cur.props.children[1].props.children < prev.props.children[1].props.children ? cur : prev
                                     )}
                                 <Link
                                     to={`/servis/${article.fields.slug}`}
