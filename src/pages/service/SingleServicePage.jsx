@@ -53,7 +53,7 @@ function SingleServicePage({ match }) {
                                 >
                                     <div className="flex flex-col gap-5 border-b-2 pb-7">
                                         <div className="flex flex-col gap-2">
-                                            <p className="worksans-500 text-[14px] bg-amber-500 text-white px-4 py-1 w-max rounded-lg whitespace-pre">
+                                            <p className="worksans-600 text-[15px] text-amber-500">
                                                 {detailService.fields.tier}
                                             </p>
                                             <p className="worksans-600 text-[18px]">
