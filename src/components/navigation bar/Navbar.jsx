@@ -31,6 +31,28 @@ function Navbar() {
                                     className="w-full h-auto"
                                 />
                             </Link>
+                            <div
+                                className="block md:hidden cursor-pointer"
+                                onClick={() => setMobileNavbar(true)}
+                            >
+                                <svg
+                                    width="24px"
+                                    height="24px"
+                                    strokeWidth="1.5"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    color="#000000"
+                                >
+                                    <path
+                                        d="M3 5h18M3 12h18M3 19h18"
+                                        stroke="#000000"
+                                        strokeWidth="1.5"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    ></path>
+                                </svg>
+                            </div>
                             <div className="hidden md:flex gap-10 text-black">
                                 <Link
                                     to="/"
@@ -67,7 +89,7 @@ function Navbar() {
                                 to="/kontak"
                                 className="hidden group md:flex items-center gap-2 bg-black pl-4 worksans-500 rounded-full w-max"
                             >
-                                <p className="capitalize text-white text-[14px]">
+                                <p className="capitalize text-white text-[14px] whitespace-nowrap">
                                     Hubungi kami
                                 </p>
                                 <span className="group-hover:rotate-45 bg-white/30 p-3 rounded-full duration-200">
@@ -90,7 +112,7 @@ function Navbar() {
                         </div>
                     </div>
                     <div
-                        className={`block md:hidden fixed inset-0 z-20 bg-white duration-200 ${
+                        className={`fixed inset-0 z-20 bg-white duration-200 ${
                             mobileNavbar
                                 ? "h-screen visible pt-20 sm:pt-32 opacity-100"
                                 : "h-0 invisible pt-0 opacity-0"
