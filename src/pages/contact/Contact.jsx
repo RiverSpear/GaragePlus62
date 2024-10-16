@@ -88,10 +88,9 @@ function Contact() {
                                         >
                                             <img
                                                 src={instagram_icon}
-                                                alt="Instagram icons created by Pixel perfect - Flaticon"
+                                                alt="Instagram icons"
                                                 title="instagram icons"
-                                                width={20}
-                                                longdesc="https://www.flaticon.com/free-icons/instagram"
+                                                className="w-[20px]"
                                             />
                                         </a>
                                         <a
@@ -102,10 +101,9 @@ function Contact() {
                                         >
                                             <img
                                                 src={tiktok_icon}
-                                                alt="Tiktok icons created by Pixel perfect - Flaticon"
+                                                alt="Tiktok icons"
                                                 title="tiktok icons"
-                                                width={20}
-                                                longdesc="https://www.flaticon.com/free-icons/tiktok"
+                                                className="w-[20px]"
                                             />
                                         </a>
                                         <a
@@ -119,10 +117,9 @@ function Contact() {
                                         >
                                             <img
                                                 src={whatsapp_icon}
-                                                alt="Whatsapp icons created by Pixel perfect - Flaticon"
+                                                alt="Whatsapp icon"
                                                 title="whatsapp icons"
-                                                width={20}
-                                                longdesc="https://www.flaticon.com/free-icons/whatsapp"
+                                                className="w-[20px]"
                                             />
                                         </a>
                                     </div>

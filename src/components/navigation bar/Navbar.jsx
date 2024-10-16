@@ -28,7 +28,7 @@ function Navbar() {
                                         article.fields.logo.fields.file.url
                                     }
                                     alt="logo"
-                                    className="w-full h-auto"
+                                    className="w-full h-full"
                                 />
                             </Link>
                             <div

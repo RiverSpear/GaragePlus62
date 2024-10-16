@@ -42,9 +42,9 @@ function ListLocationHomepage() {
                         className="flex flex-col items-center text-center gap-5 w-full md:w-3/4 lg:w-1/3 xl:w-2/5"
                     >
                         {article.fields.type === true ? (
-                            <p className="worksans-600 text-amber-600 text-[18px] w-max">Pusat</p>
+                            <p className="worksans-600 text-amber-600 text-[18px]">Pusat</p>
                         ) : (
-                            <p className="worksans-600 text-amber-600 text-[18px] w-max">
+                            <p className="worksans-600 text-amber-600 text-[18px]">
                                 Cabang
                             </p>
                         )}

@@ -88,10 +88,9 @@ function Location() {
                                         >
                                             <img
                                                 src={whatsapp_icon}
-                                                alt="Whatsapp icons created by Pixel perfect - Flaticon"
+                                                alt="Whatsapp icons"
                                                 title="whatsapp icons"
-                                                width={24}
-                                                longdesc="https://www.flaticon.com/free-icons/whatsapp"
+                                                className="w-[24px]"
                                             />
                                         </a>
                                         <a
@@ -102,10 +101,9 @@ function Location() {
                                         >
                                             <img
                                                 src={instagram_icon}
-                                                alt="Instagram icons created by Pixel perfect - Flaticon"
+                                                alt="Instagram icons"
                                                 title="instagram icons"
-                                                width={24}
-                                                longdesc="https://www.flaticon.com/free-icons/instagram"
+                                                className="w-[24px]"
                                             />
                                         </a>
                                         <a
@@ -116,10 +114,9 @@ function Location() {
                                         >
                                             <img
                                                 src={tiktok_icon}
-                                                alt="Tiktok icons created by Pixel perfect - Flaticon"
+                                                alt="Tiktok icons"
                                                 title="tiktok icons"
-                                                width={24}
-                                                longdesc="https://www.flaticon.com/free-icons/tiktok"
+                                                className="w-[24px]"
                                             />
                                         </a>
                                     </div>
