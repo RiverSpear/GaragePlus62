@@ -126,7 +126,7 @@ function Chat() {
                                         <img
                                             src={whatsapp_icon}
                                             alt=""
-                                            width={24}
+                                            className="w-[24px]"
                                         />
                                         <p className="worksans text-gray-600 group-hover:underline">
                                             {formatPhoneNumber(
@@ -143,7 +143,7 @@ function Chat() {
                                         <img
                                             src={instagram_icon}
                                             alt=""
-                                            width={24}
+                                            className="w-[24px]"
                                         />
                                         <p className="worksans text-gray-600 group-hover:underline">
                                             {article.fields.instagram}
@@ -158,7 +158,7 @@ function Chat() {
                                         <img
                                             src={tiktok_icon}
                                             alt=""
-                                            width={24}
+                                            className="w-[24px]"
                                         />
                                         <p className="worksans text-gray-600 group-hover:underline">
                                             {article.fields.tikTok}
