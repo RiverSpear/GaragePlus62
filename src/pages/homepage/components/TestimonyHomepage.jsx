@@ -30,7 +30,7 @@ function TestimonyHomepage() {
                     return article.fields.showOnHomepage === true ? (
                         <div
                             key={article.sys.id}
-                            className="flex flex-col justify-between items-start gap-3 bg-white text-left rounded-2xl shadow-[0_0_100px_20px_rgba(0,0,0,0.05)] p-6"
+                            className="flex flex-col justify-between items-start gap-3 bg-amber-50 text-left rounded-2xl p-6"
                         >
                             <div className="flex flex-col gap-3">
                             <span>
@@ -60,7 +60,7 @@ function TestimonyHomepage() {
                                 {article.fields.testimony}
                             </p>
                             </div>
-                            <p className="worksans-600 text-amber-600 text-[18px] w-max">
+                            <p className="worksans-600 text-black w-max">
                                 {article.fields.reviewerName}
                             </p>
                         </div>

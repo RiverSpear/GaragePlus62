@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import client from "../../client";
 import Loading from "../Loading/Loading";
 
-import whatsapp_icon from "../../asset/icon/whatsapp.png";
-import instagram_icon from "../../asset/icon/instagram.png";
-import tiktok_icon from "../../asset/icon/tik-tok.png";
+import whatsapp_icon from "../../asset/icon/whatsapp.svg";
+import instagram_icon from "../../asset/icon/instagram.svg";
+import tiktok_icon from "../../asset/icon/tiktok.svg";
 
 function Chat() {
     const [articles, setArticles] = useState([]);

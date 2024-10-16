@@ -5,9 +5,9 @@ import Loading from "../../components/Loading/Loading";
 import Navbar from "../../components/navigation bar/Navbar";
 import ScrollToTop from "../../components/scroll to top/ScrollToTop";
 
-import whatsapp_icon from "../../asset/icon/whatsapp.png";
-import instagram_icon from "../../asset/icon/instagram.png";
-import tiktok_icon from "../../asset/icon/tik-tok.png";
+import whatsapp_icon from "../../asset/icon/whatsapp.svg";
+import instagram_icon from "../../asset/icon/instagram.svg";
+import tiktok_icon from "../../asset/icon/tiktok.svg";
 import { Link } from "react-router-dom";
 import PageNotFound from "../error/PageNotFound";
 

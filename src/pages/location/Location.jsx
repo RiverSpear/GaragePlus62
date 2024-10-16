@@ -7,9 +7,9 @@ import Navbar from "../../components/navigation bar/Navbar";
 import Footer from "../../components/footer/Footer";
 import ScrollToTop from "../../components/scroll to top/ScrollToTop";
 
-import whatsapp_icon from "../../asset/icon/whatsapp.png";
-import instagram_icon from "../../asset/icon/instagram.png";
-import tiktok_icon from "../../asset/icon/tik-tok.png";
+import whatsapp_icon from "../../asset/icon/whatsapp.svg";
+import instagram_icon from "../../asset/icon/instagram.svg";
+import tiktok_icon from "../../asset/icon/tiktok.svg";
 import PageNotFound from "../error/PageNotFound";
 
 function Location() {

@@ -62,7 +62,7 @@ function ListService() {
                                             return (
                                                 <p
                                                     key={index}
-                                                    className="worksans-600 text-[15px] text-amber-600 w-max"
+                                                    className="worksans-600 text-[14px] bg-amber-50 text-black border border-amber-500 px-2 py-1 w-max rounded-lg"
                                                 >
                                                     Service All In
                                                 </p>
