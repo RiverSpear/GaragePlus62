@@ -90,7 +90,7 @@ function Location() {
                                                 src={whatsapp_icon}
                                                 alt="Whatsapp icons"
                                                 title="whatsapp icons"
-                                                className="w-[24px]"
+                                                className="w-[24px] h-full"
                                             />
                                         </a>
                                         <a
@@ -103,7 +103,7 @@ function Location() {
                                                 src={instagram_icon}
                                                 alt="Instagram icons"
                                                 title="instagram icons"
-                                                className="w-[24px]"
+                                                className="w-[24px] h-full"
                                             />
                                         </a>
                                         <a
@@ -116,7 +116,7 @@ function Location() {
                                                 src={tiktok_icon}
                                                 alt="Tiktok icons"
                                                 title="tiktok icons"
-                                                className="w-[24px]"
+                                                className="w-[24px] h-full"
                                             />
                                         </a>
                                     </div>

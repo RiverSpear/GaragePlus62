@@ -90,7 +90,7 @@ function Contact() {
                                                 src={instagram_icon}
                                                 alt="Instagram icons"
                                                 title="instagram icons"
-                                                className="w-[20px]"
+                                                className="w-[20px] h-full"
                                             />
                                         </a>
                                         <a
@@ -103,7 +103,7 @@ function Contact() {
                                                 src={tiktok_icon}
                                                 alt="Tiktok icons"
                                                 title="tiktok icons"
-                                                className="w-[20px]"
+                                                className="w-[20px] h-full"
                                             />
                                         </a>
                                         <a
@@ -119,7 +119,7 @@ function Contact() {
                                                 src={whatsapp_icon}
                                                 alt="Whatsapp icon"
                                                 title="whatsapp icons"
-                                                className="w-[20px]"
+                                                className="w-[20px] h-full"
                                             />
                                         </a>
                                     </div>

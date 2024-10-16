@@ -44,9 +44,7 @@ function ListLocationHomepage() {
                         {article.fields.type === true ? (
                             <p className="worksans-600 text-[18px]">Pusat</p>
                         ) : (
-                            <p className="worksans-600 text-[18px]">
-                                Cabang
-                            </p>
+                            <p className="worksans-600 text-[18px]">Cabang</p>
                         )}
                         <div className="flex flex-col items-center gap-8">
                             <p className="worksans text-gray-600">
@@ -66,7 +64,7 @@ function ListLocationHomepage() {
                                         src={whatsapp_icon}
                                         alt="Whatsapp icons"
                                         title="whatsapp icons"
-                                        className="w-[24px]"
+                                        className="w-[24px] h-full"
                                     />
                                 </a>
                                 <a
@@ -79,7 +77,7 @@ function ListLocationHomepage() {
                                         src={instagram_icon}
                                         alt="Instagram icons"
                                         title="instagram icons"
-                                        className="w-[24px]"
+                                        className="w-[24px] h-full"
                                     />
                                 </a>
                                 <a
@@ -92,7 +90,7 @@ function ListLocationHomepage() {
                                         src={tiktok_icon}
                                         alt="Tiktok icons"
                                         title="tiktok icons"
-                                        className="w-[24px]"
+                                        className="w-[24px] h-full"
                                     />
                                 </a>
                             </div>
