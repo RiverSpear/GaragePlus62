@@ -41,13 +41,13 @@ function AboutHomepage() {
                         <div className="flex gap-5 text-[14px] sm:text-[16px] text-center whitespace-nowrap">
                             <Link
                                 to="/lokasi"
-                                className="worksans-500 capitalize bg-amber-500 hover:bg-amber-400 text-white px-8 py-3 rounded-full duration-200"
+                                className="worksans-500 capitalize bg-amber-500 hover:bg-amber-400 text-black px-8 py-3 rounded-full duration-200"
                             >
                                 Lokasi Kami
                             </Link>
                             <Link
                                 to="/servis"
-                                className="worksans-500 capitalize bg-amber-500 hover:bg-amber-400 text-white px-8 py-3 rounded-full duration-200"
+                                className="worksans-500 capitalize bg-amber-500 hover:bg-amber-400 text-black px-8 py-3 rounded-full duration-200"
                             >
                                 Servis Kami
                             </Link>

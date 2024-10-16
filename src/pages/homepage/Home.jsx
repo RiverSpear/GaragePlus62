@@ -14,7 +14,7 @@ import NavbarHomepage from "../../components/navigation bar/NavbarHompage";
 function Home() {
     return (
         <>
-            <div className="flex flex-col gap-56">
+            <div className="flex flex-col gap-32">
                 <div>
                     <NavbarHomepage />
                     <AboutHomepage />

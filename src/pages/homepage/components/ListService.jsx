@@ -51,7 +51,7 @@ function ListService() {
                                 article.fields.headlinePhoto.fields.file.url
                             }
                             alt={article.fields.headlinePhoto.fields.title}
-                            className="lazyload h-[200px] object-cover rounded-2xl"
+                            className="lazyload w-full h-[200px] object-cover rounded-2xl"
                         />
                         <div className="flex flex-col gap-10 h-full">
                             <div className="flex-1 flex flex-col gap-2">
@@ -62,7 +62,7 @@ function ListService() {
                                             return (
                                                 <p
                                                     key={index}
-                                                    className="worksans-600 text-[14px] text-amber-500"
+                                                    className="worksans-600 text-[15px] text-amber-600 w-max"
                                                 >
                                                     Service All In
                                                 </p>

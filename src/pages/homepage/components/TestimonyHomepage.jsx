@@ -56,11 +56,11 @@ function TestimonyHomepage() {
                                     ></path>
                                 </svg>
                             </span>
-                            <p className="worksans-500 text-[14px] text-left">
+                            <p className="worksans-500 text-[15px] text-left">
                                 {article.fields.testimony}
                             </p>
                             </div>
-                            <p className="worksans-600 text-amber-500">
+                            <p className="worksans-600 text-amber-600 text-[18px] w-max">
                                 {article.fields.reviewerName}
                             </p>
                         </div>
