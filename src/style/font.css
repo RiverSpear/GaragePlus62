@@ -1,0 +1,79 @@
+@font-face {
+    font-family: worksans-100;
+    src: url('https://res.cloudinary.com/dfpburr1g/raw/upload/v1685171713/WorkSans-Thin_mjlect.ttf');
+    font-display: swap;
+}
+
+.worksans-100{
+    font-family: worksans-100;
+}
+
+@font-face {
+    font-family: worksans-200;
+    src: url('https://res.cloudinary.com/dfpburr1g/raw/upload/v1685171712/WorkSans-ExtraLight_ynxb2n.ttf');
+    font-display: swap;
+}
+
+.worksans-200{
+    font-family: worksans-200;
+}
+
+@font-face {
+    font-family: worksans-300;
+    src: url('https://res.cloudinary.com/dfpburr1g/raw/upload/v1685171712/WorkSans-Light_q3ii1r.ttf');
+    font-display: swap;
+}
+
+.worksans-300{
+    font-family: worksans-300;
+}
+
+@font-face {
+    font-family: worksans;
+    src: url('https://res.cloudinary.com/dfpburr1g/raw/upload/v1685171713/WorkSans-Regular_gzxwjt.ttf');
+    font-display: swap;
+}
+
+.worksans{
+    font-family: worksans;
+}
+
+@font-face {
+    font-family: worksans-500;
+    src: url('https://res.cloudinary.com/dfpburr1g/raw/upload/v1685171713/WorkSans-Medium_wnjaar.ttf');
+    font-display: swap;
+}
+
+.worksans-500{
+    font-family: worksans-500;
+}
+
+@font-face {
+    font-family: worksans-600;
+    src: url('https://res.cloudinary.com/dfpburr1g/raw/upload/v1685171713/WorkSans-SemiBold_l5arqz.ttf');
+    font-display: swap;
+}
+
+.worksans-600{
+    font-family: worksans-600;
+}
+
+@font-face {
+    font-family: worksans-700;
+    src: url('https://res.cloudinary.com/dfpburr1g/raw/upload/v1685171713/WorkSans-Bold_klx4ha.ttf');
+    font-display: swap;
+}
+
+.worksans-700{
+    font-family: worksans-700;
+}
+
+@font-face {
+    font-family: worksans-800;
+    src: url('https://res.cloudinary.com/dfpburr1g/raw/upload/v1685171711/WorkSans-ExtraBold_empxwc.ttf');
+    font-display: swap;
+}
+
+.worksans-800{
+    font-family: worksans-800;
+}
