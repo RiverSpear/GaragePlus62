@@ -9,6 +9,7 @@ import Breadcrumb from "../../components/common/Breadcrumb";
 import Loading from "../../components/layout/loading/Loading";
 import BadRequest from "../../components/errors/BadRequest";
 import PageNotFound from "../../components/errors/PageNotFound";
+import ScrollToTop from "../../components/layout/ScrollToTop";
 
 function Faq() {
     const { articles, isLoading, error } = useFetchArticles("faq");
@@ -19,7 +20,10 @@ function Faq() {
     return (
         <>
             <Navbar />
-            <div className="flex flex-col items-center gap-20 w-full px-5 sm:px-10 md:px-16 xl:px-24 pt-40 pb-40">
+            <div
+                id="top"
+                className="flex flex-col items-center gap-20 w-full 2xl:w-[1500px] mx-auto px-5 sm:px-10 md:px-16 xl:px-24 pt-40 pb-40"
+            >
                 <div>
                     <Breadcrumb
                         paths={[{ label: "Garageplus62" }, { label: "FAQ" }]}
@@ -27,7 +31,7 @@ function Faq() {
                     <Header
                         page="FAQ"
                         title="Pertanyaan seputar bengkel kami"
-                        description="Butuh info lebih lanjut? Tenang, semua pertanyaan yang sering ditanyakan sudah kita rangkum di sini. Cek dulu sebelum tanya, siapa tahu jawabannya udah ada! 🚀"
+                        description="Butuh info lebih lanjut? Tenang, semua pertanyaan yang sering ditanyakan sudah kita rangkum di sini. Cek dulu sebelum tanya, siapa tahu jawabannya udah ada!"
                     />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-2 md:gap-y-5">
@@ -39,12 +43,13 @@ function Faq() {
                             containerClass="bg-slate-50 p-5 cursor-pointer rounded-xl"
                             questionClass="worksans-500 hover:text-amber-500"
                             iconClass="size-5"
-                            answerClass="text-[.875rem] mt-2 worksans text-slate-500"
+                            answerClass="text-[.875rem] mt-2 worksans text-gray-500"
                         />
                     ))}
                 </div>
             </div>
             <Footer />
+            <ScrollToTop />
         </>
     );
 }

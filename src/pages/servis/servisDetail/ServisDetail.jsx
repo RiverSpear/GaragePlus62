@@ -7,6 +7,7 @@ import Breadcrumb from "../../../components/common/Breadcrumb";
 import Loading from "../../../components/layout/loading/Loading";
 import BadRequest from "../../../components/errors/BadRequest";
 import PageNotFound from "../../../components/errors/PageNotFound";
+import ScrollToTop from "../../../components/layout/ScrollToTop";
 
 function ServisDetail() {
     const { slug } = useParams();
@@ -24,7 +25,10 @@ function ServisDetail() {
     return (
         <>
             <Navbar />
-            <div className="flex flex-col gap-5 px-5 sm:px-10 md:px-16 xl:px-24 pt-28 md:pt-40 pb-40">
+            <div
+                id="top"
+                className="flex flex-col gap-5 w-full 2xl:w-[1500px] px-5 sm:px-10 md:px-16 xl:px-24 pt-28 md:pt-40 pb-40 mx-auto"
+            >
                 <Breadcrumb
                     paths={[
                         { label: "Garageplus62" },
@@ -41,14 +45,12 @@ function ServisDetail() {
                         className="w-full md:w-1/2 h-[200px] sm:h-[300px] md:h-[375px] lg:h-[425px] object-cover rounded-[20px]"
                     />
                     <div className="flex flex-col gap-5">
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-2 w-full lg:w-3/4">
                             <p className="worksans-600 text-2xl">
                                 {singleArticle.fields.servicePackageName}
                             </p>
-                            <p className="worksans text-[14px] text-slate-600">
-                                Peningkatan performa mesin yang signifikan:
-                                Performa mesin akan lebih optimal dengan
-                                peningkatan tenaga.
+                            <p className="worksans text-[14px] text-gray-600">
+                                {singleArticle.fields.serviceDescription}
                             </p>
                         </div>
                         {singleArticle.fields.detailService.map(
@@ -75,6 +77,11 @@ function ServisDetail() {
                                     (detailService, i) => (
                                         <button
                                             key={i}
+                                            name={
+                                                detailService.fields
+                                                    .detailServiceName -
+                                                detailService.fields.tier
+                                            }
                                             onClick={() => setActiveTab(i)}
                                             className={`text-sm text-left px-3 py-2 rounded-full hover:text-amber-500 hover:bg-amber-50 transition-all duration-200 cursor-pointer ${
                                                 activeTab === i
@@ -114,9 +121,9 @@ function ServisDetail() {
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         fill="none"
                                                         viewBox="0 0 24 24"
-                                                        strokeWidth={2}
+                                                        strokeWidth={2.5}
                                                         stroke="currentColor"
-                                                        className="w-5 h-5 stroke-green-500 flex-shrink-0"
+                                                        className="w-5 h-5 stroke-amber-500 flex-shrink-0"
                                                     >
                                                         <path
                                                             strokeLinecap="round"
@@ -138,6 +145,7 @@ function ServisDetail() {
                 </div>
             </div>
             <Footer />
+            <ScrollToTop />
         </>
     );
 }

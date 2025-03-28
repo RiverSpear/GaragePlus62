@@ -9,10 +9,10 @@ function Index(props) {
         <>
             <section className="flex flex-col items-center gap-10 text-center py-56 px-10">
                 <div className="flex flex-col items-center gap-5">
-                    <p className="worksans-600 text-[31px] md:text-[39px] text-slate-800">
+                    <p className="worksans-600 text-[31px] md:text-[39px] text-gray-800">
                         {props.title}
                     </p>
-                    <p className="worksans text-[15px] leading-7 text-slate-800 w-full sm:w-3/4">
+                    <p className="worksans text-[15px] leading-7 text-gray-800 w-full sm:w-3/4">
                         {props.description}
                     </p>
                 </div>

@@ -8,6 +8,7 @@ import Breadcrumb from "../../components/common/Breadcrumb";
 import Loading from "../../components/layout/loading/Loading";
 import BadRequest from "../../components/errors/BadRequest";
 import PageNotFound from "../../components/errors/PageNotFound";
+import ScrollToTop from "../../components/layout/ScrollToTop";
 
 function Testimoni() {
     const { articles, isLoading, error } = useFetchArticles("testimonial");
@@ -18,7 +19,7 @@ function Testimoni() {
     return (
         <>
             <Navbar />
-            <div className="flex flex-col items-center gap-20 w-full px-5 sm:px-10 md:px-16 xl:px-24 pt-40 pb-40">
+            <div id="top" className="flex flex-col items-center gap-20 w-full 2xl:w-[1500px] mx-auto px-5 sm:px-10 md:px-16 xl:px-24 pt-40 pb-40">
                 <div>
                     <Breadcrumb
                         paths={[
@@ -32,7 +33,7 @@ function Testimoni() {
                         description="Nggak cuma janji kosong! Inilah pengalaman nyata dari pelanggan yang telah mencoba layanan kami. Baca bagaimana mereka merasakan kemudahan, kenyamanan, dan hasil yang sesuai harapan. Mungkin, cerita mereka bisa jadi awal perjalanan kamu bersama kami!"
                     />
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-y-7">
                     {articles.map((article, i) => (
                         <TestimoniBox
                             key={i}
@@ -43,6 +44,7 @@ function Testimoni() {
                 </div>
             </div>
             <Footer />
+            <ScrollToTop />
         </>
     );
 }

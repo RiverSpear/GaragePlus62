@@ -16,11 +16,13 @@ function About() {
                                     "https:" +
                                     article.fields.logo.fields.file.url
                                 }
-                                alt=""
+                                alt="Logo"
+                                width="80"
+                                height="80"
                                 className="w-[80px]"
                             />
                         </Link>
-                        <p className="worksans text-slate-500 text-sm w-full md:w-[400px]">
+                        <p className="worksans text-sm w-full md:w-[400px]">
                             {article.fields.headlineDescription}
                         </p>
                     </div>
@@ -28,7 +30,7 @@ function About() {
                         <div className="flex flex-col sm:flex-row gap-10 md:gap-20">
                             <div className="flex flex-col gap-5 whitespace-nowrap">
                                 <p className="worksans-600">Quick Links</p>
-                                <div className="flex flex-col gap-2 worksans text-slate-500 text-sm">
+                                <div className="flex flex-col gap-2 worksans text-sm">
                                     <Link
                                         to="/servis"
                                         className="hover:text-amber-500"
@@ -57,7 +59,7 @@ function About() {
                             </div>
                             <div className="flex flex-col gap-5 whitespace-nowrap">
                                 <p className="worksans-600">Jam Operasional</p>
-                                <table className="worksans text-slate-500 blackspace-nowrap text-sm">
+                                <table className="worksans blackspace-nowrap text-sm">
                                     <tbody>
                                         <tr>
                                             <td className="pb-2 pr-14">

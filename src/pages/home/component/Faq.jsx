@@ -15,7 +15,7 @@ function Faq() {
                         <p className="worksans-600 text-[25px] sm:text-[31px] text-neutral-800 capitalize">
                             Pertanyaan yang Sering Ditanya
                         </p>
-                        <p className="text-slate-700 worksans text-[14px] md:text-[1rem] w-full sm:w-1/2 md:w-full">
+                        <p className="text-gray-700 worksans text-[14px] md:text-[1rem] w-full sm:w-1/2 md:w-full">
                             Bingung? Ada pertanyaan? Kepoin dulu FAQ kita, kali
                             aja udah dijawab! kita siap ngebantu kamu
                         </p>
@@ -36,7 +36,7 @@ function Faq() {
                                 containerClass="cursor-pointer"
                                 questionClass="worksans-500 hover:text-amber-500"
                                 iconClass="size-5"
-                                answerClass="text-[.875rem] mt-2 worksans text-slate-500"
+                                answerClass="text-[.875rem] mt-2 worksans text-gray-500"
                             />
                         ) : null;
                     })}

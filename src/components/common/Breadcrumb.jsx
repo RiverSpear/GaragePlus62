@@ -2,7 +2,7 @@ import React from "react";
 
 const Breadcrumb = ({ paths }) => {
     return (
-        <nav className="hidden sm:flex items-center gap-2 worksans text-sm text-slate-500">
+        <nav className="hidden sm:flex items-center gap-2 worksans text-sm text-gray-500">
             {paths.map((path, index) => (
                 <div key={index} className="flex items-center gap-2">
                     {index > 0 && (

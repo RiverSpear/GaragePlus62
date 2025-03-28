@@ -1,7 +1,12 @@
 @import "tailwindcss";
 
-*{
-	scroll-behavior: smooth;
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 iframe {

@@ -31,10 +31,15 @@ function Location() {
                         Lokasi Bengkel
                     </p>
                 </div>
-                <div className="flex flex-wrap justify-center gap-32 w-full">
+                <div className="flex flex-col lg:flex-row justify-center gap-32 w-full">
                     <LokasiBox
-                        boxClass="flex flex-col items-center text-center gap-5 w-full md:w-3/4 lg:w-1/3 xl:w-2/5"
-                        showMap={false}
+                        boxClass="flex flex-col gap-5 w-full lg:w-[325px] xl:w-[500px]"
+                        typeClass="worksans-600 text-amber-500 text-xl text-center"
+                        contentContainer="flex flex-col-reverse gap-7"
+                        addressClass="flex flex-col text-center gap-5"
+                        socmedContainerClass="flex justify-center items-center gap-5"
+                        buttonClass="mx-auto"
+                        showMap={true}
                     />
                 </div>
             </div>
