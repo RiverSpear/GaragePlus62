@@ -58,20 +58,20 @@ function Testimony() {
                             onClick={() => carouselRef.current?.onClickPrev()}
                             title="Prev"
                             aria-label="Prev"
-                            className="cursor-pointer border-2 border-gray-200 hover:border-amber-500 duration-200 p-2 rounded-full"
+                            className="cursor-pointer bg-gray-200 hover:bg-amber-200 duration-200 p-2 rounded-full"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
-                                strokeWidth={1.5}
+                                strokeWidth={1.75}
                                 stroke="currentColor"
-                                className="size-6"
+                                className="w-[20px]"
                             >
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
-                                    d="M15.75 19.5 8.25 12l7.5-7.5"
+                                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
                                 />
                             </svg>
                         </button>
@@ -79,20 +79,20 @@ function Testimony() {
                             onClick={() => carouselRef.current?.onClickNext()}
                             title="Next"
                             aria-label="Next"
-                            className="cursor-pointer border-2 border-gray-200 hover:border-amber-500 duration-200 p-2 rounded-full"
+                            className="cursor-pointer bg-gray-200 hover:bg-amber-200 duration-200 p-2 rounded-full"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
-                                strokeWidth={1.5}
+                                strokeWidth={1.75}
                                 stroke="currentColor"
-                                className="size-6 rotate-180"
+                                className="w-[20px]"
                             >
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
-                                    d="M15.75 19.5 8.25 12l7.5-7.5"
+                                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
                                 />
                             </svg>
                         </button>
