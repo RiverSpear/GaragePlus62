@@ -2,7 +2,7 @@ import "./style/App.css";
 import "./style/font.css";
 import "./components/layout/loading/loading.css";
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/home/home";
+import Home from "./pages/home/Home";
 import Servis from "./pages/servis/Servis";
 import ServisDetail from "./pages/servis/servisDetail/servisDetail";
 import Lokasi from "./pages/lokasi/Lokasi";
