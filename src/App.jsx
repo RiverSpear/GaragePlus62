@@ -4,7 +4,7 @@ import "./components/layout/loading/loading.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Servis from "./pages/servis/Servis";
-import ServisDetail from "./pages/servis/servisDetail/servisDetail";
+import ServisDetail from "./pages/servis/servisDetail/ServisDetail";
 import Lokasi from "./pages/lokasi/Lokasi";
 import Faq from "./pages/faq/Faq";
 import Testimoni from "./pages/testimoni/Testimoni";
